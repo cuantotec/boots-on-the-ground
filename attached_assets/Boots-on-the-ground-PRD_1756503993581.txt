@@ -1,0 +1,114 @@
+﻿Product Requirements Document: Boots On The Ground Website Redevelopment
+Author: Gemini
+Date: August 29, 2025
+Version: 1.3
+1. Overview & Background
+"Boots On The Ground" (BOTG) provides specialized visual documentation services for distressed properties, targeting real estate agents, investors, and property managers in the Tri-State area. The current website, built on GoDaddy, lacks a modern, professional aesthetic and a streamlined user experience.
+This document outlines the requirements for a complete redevelopment of the website to create a modern, fast, and user-friendly platform that effectively showcases BOTG's services and encourages customer contact.
+2. Goals & Objectives
+* Primary Goal: To create a professional, visually appealing, and responsive website that clearly communicates BOTG's value proposition and services.
+* Secondary Goals:
+   * Increase lead generation through an intuitive contact and ordering process.
+   * Establish a strong, modern brand identity.
+   * Improve user experience and navigation across all devices (desktop, tablet, mobile).
+   * Build a scalable foundation for future feature additions.
+3. Target Audience
+* Real Estate Investors: Individuals or companies looking for quick, reliable, and expert visual assessments of potential investment properties, especially when they cannot be physically present.
+* Real Estate Agents: Professionals who need high-quality photos, videos, and virtual tours to market distressed or unique properties effectively.
+* Property Managers: Individuals or firms needing documentation of property conditions or assistance with on-site tasks.
+4. Technology Stack
+* Frontend Framework: React
+* Build Tool: Vite
+* UI Components: shadcn/ui
+* Styling: Tailwind CSS
+* Database: None for V1.
+5. Functional Requirements (Features)
+5.1. Global Elements
+5.1.1. Navigation Bar
+* Logo: BOTG logo on the left. Clicking it navigates to the Home page.
+   * Placeholder: https://placehold.co/400x100/1E3A8A/FFFFFF?text=BOTG+Logo
+* Navigation Links:
+   * Home
+   * About
+   * Services (or Portfolio)
+   * Contact Us
+* CTA Button: A prominent "Order Now" button that scrolls to the services section or navigates to the Contact Us page.
+* Behavior: The navbar should be sticky at the top of the page and fully responsive for mobile devices, likely collapsing into a hamburger menu.
+5.1.2. Footer
+* Sitemap Links: Repeat of the main navigation links (Home, About, Services, Contact Us).
+* Contact Information:
+   * Phone: (609) 350-4359
+   * Email: info@reBootsOnTheGround.com
+* Social Media Links: Icons linking to BOTG's social media profiles (e.g., Facebook, Instagram, LinkedIn). Placeholder icons should be used if links are not yet available.
+* Legal & Copyright:
+   * Copyright notice: Copyright © 2024 Boots on the Ground - All Rights Reserved.
+   * A section for Legal Disclaimers applicable to the state of New Jersey (e.g., Privacy Policy, Terms of Service). Content to be provided by the client.
+5.2. Page-Specific Requirements
+5.2.1. Home Page
+* Hero Section:
+   * Headline: "Boots on the ground for your real estate investment needs"
+   * Sub-headlines: "Now Servicing the Tri-State Area" and "Experienced Investors Helping Investors"
+   * Primary CTA: A button labeled "View Our Services" that scrolls down to the services section.
+   * Background: A high-quality, professional background image.
+      * Placeholder: https://placehold.co/1920x1080/CCCCCC/FFFFFF?text=Hero+Image+(16:9)
+* Introduction Section:
+   * A brief, engaging section explaining what BOTG does, using the text: "At BOTG we specialize in capturing the unique character of distressed properties..."
+* Services Overview Section:
+   * A grid or card-based layout showcasing each service.
+   * Each card should include the service name, a short description, and the price.
+   * A clear "Learn More" or "Order Now" button on each card.
+* Call to Action (CTA) Banner:
+   * A full-width banner with a compelling message like "Get a Clear View of Your Next Investment" and a "Contact Us Today" button.
+5.2.2. About Page
+* Structure: A clean layout dedicated to telling the BOTG story.
+* Content Sections:
+   * Our Vision: "Our vision at Boots on the Ground is to be the leading investment real estate service provider..."
+   * Our Values: "We are committed to upholding the highest standards of integrity, honesty, and transparency..."
+   * Our Services (Summary): "We are your eyes and ears in any situation..."
+5.2.3. Services Page
+* Layout: A detailed, clear presentation of all services offered. A dedicated page is recommended for scalability.
+* Service Listings: Each service should be listed in its own section or card with full details and an "Order Now" CTA.
+5.2.4. Contact Us Page
+* Contact Form:
+   * Fields: Name (Required), Email (Required, validation for format), Phone Number, Address of Property, Message/Request Details (Text Area).
+   * Submit Button: Clear "Send Message" button. Note: For V1, this is a visual component only.
+* Direct Contact Information:
+   * Display phone number and email address clearly.
+   * Headline: "Have a specific question? Call or Text us now - (609) 350-4359"
+* Business Hours:
+   * A neatly formatted list of business hours.
+6. Non-Functional Requirements
+* Design & User Experience (UX):
+   * The design must be clean, modern, and professional.
+   * The UI must be intuitive and fully responsive.
+* Performance:
+   * Target fast load times (Google PageSpeed Insights score of 90+).
+   * Optimize all images.
+* Search Engine Optimization (SEO) & Accessibility:
+   * HTML Structure: Use semantic HTML5 markup (<h1>, <h2>, etc.).
+   * Favicon:
+      * Placeholder: https://placehold.co/64x64/1E3A8A/FFFFFF?text=F
+   * Page Titles: Unique <title> tag for each page.
+   * Meta Descriptions: Unique meta description (approx. 155-160 characters) for each page.
+   * Image SEO: All images must have descriptive alt text.
+   * Crawlability: Generate sitemap.xml and robots.txt.
+   * Accessibility: Strive to follow WCAG 2.1 AA standards.
+* Social Sharing (Open Graph):
+   * Each page must include Open Graph and Twitter Card metadata in the <head>.
+   * Required Tags per Page:
+      * og:title: The title of the page.
+      * og:description: A concise description of the page's content.
+      * og:url: The canonical URL of the page.
+      * og:type: Should be set to website.
+      * og:image: A URL to a representative image.
+         * Placeholder: https://placehold.co/1200x630/CCCCCC/FFFFFF?text=Social+Sharing+Image
+      * twitter:card: Should be set to summary_large_image.
+7. Out of Scope (for Version 1.0)
+* Backend & Database: No database. The contact form is visual-only.
+* E-commerce/Online Payments: "Order Now" buttons will lead to the contact form.
+* User Accounts/Client Portal.
+* Blog/Content Management System (CMS).
+8. Success Metrics
+* Increase in contact form submissions by 25% within 3 months (post-functionality).
+* Reduction in bounce rate by 15%.
+* Positive client feedback on the new design and usability.
