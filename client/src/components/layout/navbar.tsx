@@ -1,7 +1,17 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScrollTo } from "@/hooks/use-scroll-to";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +28,13 @@ export function Navbar() {
     { label: "Services", href: "services" },
     { label: "Contact Us", href: "contact" },
   ];
+
+  const locations = {
+    "New Jersey": ["Newark", "Jersey City", "Paterson", "Elizabeth", "Trenton"],
+    "Pennsylvania": ["Philadelphia", "Pittsburgh", "Allentown", "Erie", "Reading"],
+    "New York": ["New York City", "Buffalo", "Rochester", "Yonkers", "Syracuse"],
+    "Connecticut": ["Bridgeport", "New Haven", "Hartford", "Stamford", "Waterbury"]
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 navbar-blur border-b border-border">
@@ -51,6 +68,34 @@ export function Navbar() {
                   {item.label}
                 </button>
               ))}
+              
+              {/* Locations Dropdown */}
+              <DropdownMenu>
+                <DropdownMenuTrigger className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-1">
+                  Locations
+                  <ChevronDown className="h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-56">
+                  {Object.entries(locations).map(([state, cities]) => (
+                    <DropdownMenuSub key={state}>
+                      <DropdownMenuSubTrigger>
+                        <a href={`/location/${state.toLowerCase().replace(' ', '-')}`} className="flex-1">
+                          {state}
+                        </a>
+                      </DropdownMenuSubTrigger>
+                      <DropdownMenuSubContent className="w-48">
+                        {cities.map((city) => (
+                          <DropdownMenuItem key={city} asChild>
+                            <a href={`/location/${state.toLowerCase().replace(' ', '-')}/${city.toLowerCase().replace(' ', '-')}`}>
+                              {city}
+                            </a>
+                          </DropdownMenuItem>
+                        ))}
+                      </DropdownMenuSubContent>
+                    </DropdownMenuSub>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
           </div>
 

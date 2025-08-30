@@ -11,6 +11,101 @@ export function Footer() {
     { label: "Contact Us", href: "contact" },
   ];
 
+  const locations = {
+    "New Jersey": ["Newark", "Jersey City", "Paterson", "Elizabeth", "Trenton"],
+    "Pennsylvania": ["Philadelphia", "Pittsburgh", "Allentown", "Erie", "Reading"],
+    "New York": ["New York City", "Buffalo", "Rochester", "Yonkers", "Syracuse"],
+    "Connecticut": ["Bridgeport", "New Haven", "Hartford", "Stamford", "Waterbury"]
+  };
+
+  return (
+    <footer className="bg-secondary text-secondary-foreground">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="space-y-4">
+            <img 
+              src="https://placehold.co/400x100/1E3A8A/FFFFFF?text=BOTG+Logo" 
+              alt="Boots On The Ground Logo" 
+              className="h-12 w-auto" 
+            />
+            <p className="text-sm text-muted-foreground">
+              Professional real estate documentation services across the Tri-State area.
+            </p>
+            <div className="flex space-x-4">
+              <Facebook className="h-5 w-5 hover:text-primary cursor-pointer" />
+              <Instagram className="h-5 w-5 hover:text-primary cursor-pointer" />
+              <Linkedin className="h-5 w-5 hover:text-primary cursor-pointer" />
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <button
+                    onClick={() => scrollToSection(item.href)}
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Service Areas */}
+          <div>
+            <h3 className="font-semibold mb-4">Service Areas</h3>
+            <ul className="space-y-2">
+              {Object.keys(locations).map((state) => (
+                <li key={state}>
+                  <a
+                    href={`/location/${state.toLowerCase().replace(' ', '-')}`}
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {state}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="font-semibold mb-4">Contact Us</h3>
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2">
+                <Phone className="h-4 w-4" />
+                <span className="text-sm text-muted-foreground">(555) 123-4567</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail className="h-4 w-4" />
+                <span className="text-sm text-muted-foreground">info@bootsontheground.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-border mt-8 pt-8 text-center">
+          <p className="text-sm text-muted-foreground">
+            © 2024 Boots On The Ground. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+  const locations = {
+    "New Jersey": ["Newark", "Jersey City", "Paterson", "Elizabeth", "Trenton"],
+    "Pennsylvania": ["Philadelphia", "Pittsburgh", "Allentown", "Erie", "Reading"],
+    "New York": ["New York City", "Buffalo", "Rochester", "Yonkers", "Syracuse"],
+    "Connecticut": ["Bridgeport", "New Haven", "Hartford", "Stamford", "Waterbury"]
+  };
+
   return (
     <footer className="bg-foreground text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
