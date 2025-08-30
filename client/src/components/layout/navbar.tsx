@@ -30,10 +30,10 @@ export function Navbar() {
   ];
 
   const locations = {
-    "New Jersey": ["Newark", "Jersey City", "Paterson", "Elizabeth", "Trenton"],
-    "Pennsylvania": ["Philadelphia", "Pittsburgh", "Allentown", "Erie", "Reading"],
-    "New York": ["New York City", "Buffalo", "Rochester", "Yonkers", "Syracuse"],
-    "Connecticut": ["Bridgeport", "New Haven", "Hartford", "Stamford", "Waterbury"]
+    "New Jersey": ["Newark", "Jersey City", "Paterson", "Elizabeth", "Trenton", "Camden", "Atlantic City", "Clifton", "Passaic", "Union City", "Bayonne", "East Orange", "Vineland", "New Brunswick", "Hoboken"],
+    "Pennsylvania": ["Philadelphia", "Pittsburgh", "Allentown", "Erie", "Reading", "Scranton", "Bethlehem", "Lancaster", "Harrisburg", "York", "Wilkes-Barre", "Chester", "Norristown", "Upper Darby", "Levittown"],
+    "New York": ["New York City", "Buffalo", "Rochester", "Yonkers", "Syracuse", "Albany", "New Rochelle", "Mount Vernon", "Schenectady", "Utica", "White Plains", "Hempstead", "Troy", "Niagara Falls", "Binghamton"],
+    "Connecticut": ["Bridgeport", "New Haven", "Hartford", "Stamford", "Waterbury", "Norwalk", "Danbury", "New Britain", "West Hartford", "Greenwich", "Hamden", "Meriden", "Bristol", "Manchester", "West Haven"]
   };
 
   return (
@@ -79,14 +79,18 @@ export function Navbar() {
                   {Object.entries(locations).map(([state, cities]) => (
                     <DropdownMenuSub key={state}>
                       <DropdownMenuSubTrigger>
-                        <a href={`/location/${state.toLowerCase().replace(' ', '-')}`} className="flex-1">
-                          {state}
-                        </a>
+                        {state}
                       </DropdownMenuSubTrigger>
                       <DropdownMenuSubContent className="w-48">
+                        <DropdownMenuItem asChild>
+                          <a href={`/location/${state.toLowerCase().replace(' ', '-')}`} className="font-semibold">
+                            View {state}
+                          </a>
+                        </DropdownMenuItem>
+                        <DropdownMenuSeparator />
                         {cities.map((city) => (
                           <DropdownMenuItem key={city} asChild>
-                            <a href={`/location/${state.toLowerCase().replace(' ', '-')}/${city.toLowerCase().replace(' ', '-')}`}>
+                            <a href={`/location/${state.toLowerCase().replace(' ', '-')}/${city.toLowerCase().replace(/\s+/g, '-')}`}>
                               {city}
                             </a>
                           </DropdownMenuItem>

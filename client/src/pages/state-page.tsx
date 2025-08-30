@@ -16,7 +16,7 @@ const stateData = {
       populationGrowth: "0.8%",
       unemploymentRate: "3.2%"
     },
-    cities: ["Newark", "Jersey City", "Paterson", "Elizabeth", "Trenton"]
+    cities: ["Newark", "Jersey City", "Paterson", "Elizabeth", "Trenton", "Camden", "Atlantic City", "Clifton", "Passaic", "Union City", "Bayonne", "East Orange", "Vineland", "New Brunswick", "Hoboken"]
   },
   "pennsylvania": {
     name: "Pennsylvania",
@@ -28,7 +28,7 @@ const stateData = {
       populationGrowth: "0.1%",
       unemploymentRate: "3.8%"
     },
-    cities: ["Philadelphia", "Pittsburgh", "Allentown", "Erie", "Reading"]
+    cities: ["Philadelphia", "Pittsburgh", "Allentown", "Erie", "Reading", "Scranton", "Bethlehem", "Lancaster", "Harrisburg", "York", "Wilkes-Barre", "Chester", "Norristown", "Upper Darby", "Levittown"]
   },
   "new-york": {
     name: "New York",
@@ -40,7 +40,7 @@ const stateData = {
       populationGrowth: "-0.3%",
       unemploymentRate: "4.1%"
     },
-    cities: ["New York City", "Buffalo", "Rochester", "Yonkers", "Syracuse"]
+    cities: ["New York City", "Buffalo", "Rochester", "Yonkers", "Syracuse", "Albany", "New Rochelle", "Mount Vernon", "Schenectady", "Utica", "White Plains", "Hempstead", "Troy", "Niagara Falls", "Binghamton"]
   },
   "connecticut": {
     name: "Connecticut",
@@ -52,7 +52,7 @@ const stateData = {
       populationGrowth: "-0.6%",
       unemploymentRate: "3.7%"
     },
-    cities: ["Bridgeport", "New Haven", "Hartford", "Stamford", "Waterbury"]
+    cities: ["Bridgeport", "New Haven", "Hartford", "Stamford", "Waterbury", "Norwalk", "Danbury", "New Britain", "West Hartford", "Greenwich", "Hamden", "Meriden", "Bristol", "Manchester", "West Haven"]
   }
 };
 

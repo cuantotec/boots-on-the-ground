@@ -66,6 +66,126 @@ const cityData = {
         averageRent: "$1,200",
         crimeRate: "High"
       }
+    },
+    "camden": {
+      name: "Camden",
+      state: "New Jersey",
+      description: "Camden is undergoing significant redevelopment with major investment opportunities for those willing to take on urban renewal projects.",
+      marketInfo: "Major corporations and institutions are investing in Camden's revitalization, creating potential for significant appreciation.",
+      keyStats: {
+        population: "71,791",
+        medianHomePrice: "$85,000",
+        averageRent: "$900",
+        crimeRate: "High"
+      }
+    },
+    "atlantic-city": {
+      name: "Atlantic City",
+      state: "New Jersey",
+      description: "Atlantic City's gaming and tourism industry creates unique real estate opportunities, particularly in hospitality and residential sectors.",
+      marketInfo: "The resort town offers diverse investment opportunities from residential to commercial properties serving the tourism industry.",
+      keyStats: {
+        population: "38,497",
+        medianHomePrice: "$140,000",
+        averageRent: "$1,100",
+        crimeRate: "High"
+      }
+    },
+    "clifton": {
+      name: "Clifton",
+      state: "New Jersey",
+      description: "Clifton offers suburban living with good schools and reasonable property values, making it attractive for families.",
+      marketInfo: "A stable residential market with good transportation access to NYC and steady demand from families.",
+      keyStats: {
+        population: "85,390",
+        medianHomePrice: "$420,000",
+        averageRent: "$1,700",
+        crimeRate: "Low"
+      }
+    },
+    "passaic": {
+      name: "Passaic",
+      state: "New Jersey",
+      description: "Passaic provides affordable real estate opportunities with potential for appreciation as the region develops.",
+      marketInfo: "An affordable market with good transportation links and potential for growth as nearby areas continue to develop.",
+      keyStats: {
+        population: "69,789",
+        medianHomePrice: "$290,000",
+        averageRent: "$1,400",
+        crimeRate: "Moderate"
+      }
+    },
+    "union-city": {
+      name: "Union City",
+      state: "New Jersey",
+      description: "Union City offers urban living with Manhattan views and has seen significant development in recent years.",
+      marketInfo: "Dense urban environment with high-rise developments and strong rental demand from NYC commuters.",
+      keyStats: {
+        population: "68,073",
+        medianHomePrice: "$480,000",
+        averageRent: "$2,200",
+        crimeRate: "Moderate"
+      }
+    },
+    "bayonne": {
+      name: "Bayonne",
+      state: "New Jersey",
+      description: "Bayonne combines waterfront living with affordable prices compared to nearby Jersey City and NYC.",
+      marketInfo: "Waterfront community with developing residential market and good transportation access to Manhattan.",
+      keyStats: {
+        population: "67,186",
+        medianHomePrice: "$450,000",
+        averageRent: "$1,900",
+        crimeRate: "Low"
+      }
+    },
+    "east-orange": {
+      name: "East Orange",
+      state: "New Jersey",
+      description: "East Orange offers affordable real estate with good transportation access to NYC and development potential.",
+      marketInfo: "An affordable market with good transportation infrastructure and potential for appreciation.",
+      keyStats: {
+        population: "69,556",
+        medianHomePrice: "$250,000",
+        averageRent: "$1,300",
+        crimeRate: "Moderate"
+      }
+    },
+    "vineland": {
+      name: "Vineland",
+      state: "New Jersey",
+      description: "Vineland offers rural charm with affordable real estate and agricultural heritage creating unique opportunities.",
+      marketInfo: "Agricultural community with affordable housing and potential for rural residential development.",
+      keyStats: {
+        population: "59,405",
+        medianHomePrice: "$180,000",
+        averageRent: "$1,000",
+        crimeRate: "Low"
+      }
+    },
+    "new-brunswick": {
+      name: "New Brunswick",
+      state: "New Jersey",
+      description: "Home to Rutgers University, New Brunswick offers steady rental demand and diverse real estate opportunities.",
+      marketInfo: "University town with consistent rental demand from students and faculty, plus growing biotech sector.",
+      keyStats: {
+        population: "55,676",
+        medianHomePrice: "$280,000",
+        averageRent: "$1,500",
+        crimeRate: "Moderate"
+      }
+    },
+    "hoboken": {
+      name: "Hoboken",
+      state: "New Jersey",
+      description: "Hoboken is a premium market with Manhattan skyline views and excellent transportation to NYC.",
+      marketInfo: "One of the most expensive markets in NJ with luxury condos and high rental rates due to NYC proximity.",
+      keyStats: {
+        population: "60,417",
+        medianHomePrice: "$750,000",
+        averageRent: "$3,000",
+        crimeRate: "Very Low"
+      }
     }
   },
   "pennsylvania": {
@@ -243,6 +363,126 @@ const cityData = {
     },
     "waterbury": {
       name: "Waterbury",
+      state: "Connecticut",
+      description: "Waterbury offers affordable real estate opportunities in Connecticut's expensive market with ongoing revitalization efforts.",
+      marketInfo: "Known as the 'Brass City', Waterbury provides value opportunities for investors with affordable housing and redevelopment potential.",
+      keyStats: {
+        population: "114,403",
+        medianHomePrice: "$150,000",
+        averageRent: "$1,000",
+        crimeRate: "Moderate"
+      }
+    },
+    "norwalk": {
+      name: "Norwalk",
+      state: "Connecticut", 
+      description: "Norwalk combines suburban charm with urban amenities, making it a desirable location for families and investors.",
+      marketInfo: "Located in Fairfield County, Norwalk offers excellent schools and proximity to NYC while maintaining reasonable property values.",
+      keyStats: {
+        population: "91,184",
+        medianHomePrice: "$450,000",
+        averageRent: "$2,000",
+        crimeRate: "Low"
+      }
+    },
+    "danbury": {
+      name: "Danbury",
+      state: "Connecticut",
+      description: "Danbury's diverse economy and affordable housing make it an attractive option for real estate investment.",
+      marketInfo: "The 'Hat City' offers good value propositions with strong rental demand from nearby corporate employment centers.",
+      keyStats: {
+        population: "86,518",
+        medianHomePrice: "$320,000",
+        averageRent: "$1,600",
+        crimeRate: "Low"
+      }
+    },
+    "new-britain": {
+      name: "New Britain",
+      state: "Connecticut",
+      description: "New Britain offers affordable entry points into Connecticut's real estate market with ongoing redevelopment initiatives.",
+      marketInfo: "Central Connecticut's industrial heritage provides opportunities for adaptive reuse and affordable housing investments.",
+      keyStats: {
+        population: "72,543",
+        medianHomePrice: "$180,000",
+        averageRent: "$1,200",
+        crimeRate: "Moderate"
+      }
+    },
+    "west-hartford": {
+      name: "West Hartford",
+      state: "Connecticut",
+      description: "West Hartford is known for excellent schools and upscale living, making it a premium real estate market.",
+      marketInfo: "One of Connecticut's most desirable communities with strong property values and excellent amenities.",
+      keyStats: {
+        population: "64,083",
+        medianHomePrice: "$425,000",
+        averageRent: "$1,800",
+        crimeRate: "Very Low"
+      }
+    },
+    "greenwich": {
+      name: "Greenwich",
+      state: "Connecticut",
+      description: "Greenwich represents Connecticut's luxury real estate market with some of the highest property values in the state.",
+      marketInfo: "An exclusive enclave for high-net-worth individuals with luxury properties and excellent proximity to NYC.",
+      keyStats: {
+        population: "63,518",
+        medianHomePrice: "$2,100,000",
+        averageRent: "$4,500",
+        crimeRate: "Very Low"
+      }
+    },
+    "hamden": {
+      name: "Hamden",
+      state: "Connecticut",
+      description: "Hamden offers suburban living with good schools and reasonable property values for Connecticut standards.",
+      marketInfo: "Located near New Haven, Hamden provides good value for families and steady rental demand from nearby universities.",
+      keyStats: {
+        population: "61,169",
+        medianHomePrice: "$250,000",
+        averageRent: "$1,400",
+        crimeRate: "Low"
+      }
+    },
+    "meriden": {
+      name: "Meriden",
+      state: "Connecticut",
+      description: "Meriden's central location and affordable housing make it an interesting market for value-oriented investors.",
+      marketInfo: "Centrally located in Connecticut with good transportation access and affordable housing stock.",
+      keyStats: {
+        population: "60,850",
+        medianHomePrice: "$190,000",
+        averageRent: "$1,100",
+        crimeRate: "Moderate"
+      }
+    },
+    "bristol": {
+      name: "Bristol",
+      state: "Connecticut",
+      description: "Bristol offers small-town charm with affordable real estate and steady employment from local industries.",
+      marketInfo: "Home to ESPN headquarters, Bristol provides employment stability and affordable housing opportunities.",
+      keyStats: {
+        population: "60,039",
+        medianHomePrice: "$210,000",
+        averageRent: "$1,200",
+        crimeRate: "Low"
+      }
+    },
+    "manchester": {
+      name: "Manchester",
+      state: "Connecticut",
+      description: "Manchester combines suburban amenities with affordable housing, making it attractive for families and investors.",
+      marketInfo: "A well-established community with good schools and reasonable property values for the Hartford area.",
+      keyStats: {
+        population: "58,241",
+        medianHomePrice: "$230,000",
+        averageRent: "$1,300",
+        crimeRate: "Low"
+      }
+    },
+    "west-haven": {
+      name: "West Haven",
       state: "Connecticut",
       description: "Waterbury presents value opportunities in Connecticut with affordable prices and potential for appreciation.",
       marketInfo: "The Brass City offers some of Connecticut's most affordable real estate with ongoing efforts to revitalize the downtown area.",
