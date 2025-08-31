@@ -4,8 +4,6 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
-  // This option makes all asset paths relative, which is robust for static deployments.
-  base: "./",
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -21,33 +19,24 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      // The alias now needs to point to the client directory from the project root
-      "@": path.resolve(import.meta.dirname, "client/src"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+      // The alias still works correctly because it's an absolute path.
+      "@": path.resolve(__dirname, "client/src"),
+      "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
-  // The 'root' property has been removed to avoid path confusion.
+  // Set the source root to the 'client' directory.
+  // Vite will now automatically look for 'client/index.html' as the input.
+  root: "client",
   build: {
-    // The input for rollup needs to be explicitly set to your index.html inside the client folder.
-    rollupOptions: {
-      input: path.resolve(import.meta.dirname, "client/index.html"),
-      output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
-          router: ["wouter"],
-          ui: ["@radix-ui/react-slot", "class-variance-authority", "clsx"],
-        },
-      },
-    },
-    // The output directory is now a clean 'dist' at the project root.
-    outDir: "dist",
+    // Set the output directory to an absolute path to the top-level 'dist' folder.
+    // This prevents Vite from creating a nested 'client' folder in the output.
+    outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
   },
   server: {
     port: 5000,
     host: "0.0.0.0",
     allowedHosts: [".replit.dev", ".repl.co"],
-    // When running the dev server, we need to tell it where to open the files from.
     fs: {
       strict: true,
       deny: ["**/.*"],
