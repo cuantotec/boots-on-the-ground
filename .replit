@@ -1,46 +1,51 @@
-modules = ["nodejs-20", "web", "postgresql-16"]
-hidden = [".config", ".git", "generated-icon.png", "node_modules", "dist"]
 
+# Language and environment
+language = "nodejs"
+
+# Entry point (not used for static deployments)
+entrypoint = "client/index.html"
+
+# Run configuration for development
 [nix]
 channel = "stable-24_05"
 
-[deployment]
-deploymentTarget = "static"
-build = "npm run build"
-publicDir = "dist"
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
 
+# Deployment configuration
+[deployment]
+run = ["sh", "-c", "echo 'This is a static site deployment'"]
+deploymentTarget = "static"
+publicDir = "dist"
+buildCommand = "npm run build"
+
+# Static deployment rewrites for SPA routing
 [[deployment.rewrites]]
 from = "/*"
 to = "/index.html"
 
-[workflows]
-runButton = "Frontend Dev"
+# Optional: Custom headers for better performance
+[[deployment.responseHeaders]]
+path = "*.js"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
 
-[[workflows.workflow]]
-name = "Project"
-mode = "parallel"
-author = "agent"
+[[deployment.responseHeaders]]
+path = "*.css"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
 
-[[workflows.workflow.tasks]]
-task = "workflow.run"
-args = "Start application"
+[[deployment.responseHeaders]]
+path = "*.png"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
 
-[[workflows.workflow]]
-name = "Start application"
-author = "agent"
+[[deployment.responseHeaders]]
+path = "*.jpg"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-
-args = "vite client"
-waitForPort = 5000
-
-[[workflows.workflow]]
-name = "Frontend Dev"
-author = 42240710
-mode = "sequential"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-
-args = "vite client"
+[[deployment.responseHeaders]]
+path = "*.svg"
+name = "Cache-Control"
+value = "public, max-age=31536000, immutable"
