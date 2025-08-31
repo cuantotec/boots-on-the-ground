@@ -12,10 +12,74 @@ export function Footer() {
   ];
 
   const locations = {
-    "New Jersey": ["Newark", "Jersey City", "Paterson", "Elizabeth", "Trenton", "Camden", "Atlantic City", "Clifton", "Passaic", "Union City", "Bayonne", "East Orange", "Vineland", "New Brunswick", "Hoboken"],
-    "Pennsylvania": ["Philadelphia", "Pittsburgh", "Allentown", "Erie", "Reading", "Scranton", "Bethlehem", "Lancaster", "Harrisburg", "York", "Wilkes-Barre", "Chester", "Norristown", "Upper Darby", "Levittown"],
-    "New York": ["New York City", "Buffalo", "Rochester", "Yonkers", "Syracuse", "Albany", "New Rochelle", "Mount Vernon", "Schenectady", "Utica", "White Plains", "Hempstead", "Troy", "Niagara Falls", "Binghamton"],
-    "Connecticut": ["Bridgeport", "New Haven", "Hartford", "Stamford", "Waterbury", "Norwalk", "Danbury", "New Britain", "West Hartford", "Greenwich", "Hamden", "Meriden", "Bristol", "Manchester", "West Haven"]
+    "New Jersey": [
+      "Newark",
+      "Jersey City",
+      "Paterson",
+      "Elizabeth",
+      "Trenton",
+      "Camden",
+      "Atlantic City",
+      "Clifton",
+      "Passaic",
+      "Union City",
+      "Bayonne",
+      "East Orange",
+      "Vineland",
+      "New Brunswick",
+      "Hoboken",
+    ],
+    Pennsylvania: [
+      "Philadelphia",
+      "Pittsburgh",
+      "Allentown",
+      "Erie",
+      "Reading",
+      "Scranton",
+      "Bethlehem",
+      "Lancaster",
+      "Harrisburg",
+      "York",
+      "Wilkes-Barre",
+      "Chester",
+      "Norristown",
+      "Upper Darby",
+      "Levittown",
+    ],
+    "New York": [
+      "New York City",
+      "Buffalo",
+      "Rochester",
+      "Yonkers",
+      "Syracuse",
+      "Albany",
+      "New Rochelle",
+      "Mount Vernon",
+      "Schenectady",
+      "Utica",
+      "White Plains",
+      "Hempstead",
+      "Troy",
+      "Niagara Falls",
+      "Binghamton",
+    ],
+    Connecticut: [
+      "Bridgeport",
+      "New Haven",
+      "Hartford",
+      "Stamford",
+      "Waterbury",
+      "Norwalk",
+      "Danbury",
+      "New Britain",
+      "West Hartford",
+      "Greenwich",
+      "Hamden",
+      "Meriden",
+      "Bristol",
+      "Manchester",
+      "West Haven",
+    ],
   };
 
   return (
@@ -24,35 +88,36 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <img 
-              src="/logo.svg" 
-              alt="Boots On The Ground Logo" 
-              className="h-12 w-auto mb-4" 
+            <img
+              src="/logo.svg"
+              alt="Boots On The Ground Logo"
+              className="h-12 w-auto mb-4"
             />
             <p className="text-gray-300 mb-4">
-              Professional visual documentation services for distressed properties in the Tri-State area. 
-              Helping real estate professionals make informed investment decisions.
+              Professional visual documentation services for distressed
+              properties in the Tri-State area. Helping real estate
+              professionals make informed investment decisions.
             </p>
             {/* Social Media Links */}
             <div className="flex space-x-4">
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="text-gray-300 hover:text-white transition-colors"
                 data-testid="link-social-facebook"
                 aria-label="Facebook"
               >
                 <Facebook className="w-6 h-6" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="text-gray-300 hover:text-white transition-colors"
                 data-testid="link-social-instagram"
                 aria-label="Instagram"
               >
                 <Instagram className="w-6 h-6" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="text-gray-300 hover:text-white transition-colors"
                 data-testid="link-social-linkedin"
                 aria-label="LinkedIn"
@@ -69,7 +134,7 @@ export function Footer() {
               {Object.keys(locations).map((state) => (
                 <li key={state}>
                   <a
-                    href={`/location/${state.toLowerCase().replace(' ', '-')}`}
+                    href={`/location/${state.toLowerCase().replace(" ", "-")}`}
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     {state}
@@ -89,7 +154,9 @@ export function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                <span data-testid="text-email">info@reBootsOnTheGround.com</span>
+                <span data-testid="text-email">
+                  info@reBootsOnTheGround.com
+                </span>
               </div>
             </div>
           </div>
@@ -98,18 +165,18 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm" data-testid="text-copyright">
-            Copyright © 2024 Boots on the Ground - All Rights Reserved
+            Copyright © 2025 Boots on the Ground - All Rights Reserved
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0 text-sm">
-            <a 
-              href="/privacy-policy" 
+            <a
+              href="/privacy-policy"
               className="text-gray-300 hover:text-white transition-colors"
               data-testid="link-privacy-policy"
             >
               Privacy Policy
             </a>
-            <a 
-              href="/terms-of-service" 
+            <a
+              href="/terms-of-service"
               className="text-gray-300 hover:text-white transition-colors"
               data-testid="link-terms-of-service"
             >
