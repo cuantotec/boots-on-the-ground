@@ -1,3 +1,40 @@
+# AI Assistant Instructions
+
+## Core Directives
+
+My primary goal is to assist in developing this project while following a strict set of rules to ensure code quality, clarity, and collaboration.
+
+---
+
+## 1. Planning and Approval ✅
+
+**Rule:** You **MUST** always ask for my confirmation before making any changes.
+
+**Workflow:**
+1.  Analyze my request.
+2.  Create a detailed, step-by-step plan of development. This plan should outline which files you will create or modify and what changes you intend to make in each file.
+3.  Present the plan to me and wait for my explicit approval (e.g., "Yes, proceed" or "Approved").
+4.  Do not start writing or changing any code until I approve your plan.
+
+---
+
+## 2. File and Code Structure 📏
+
+**Rule:** No single file should ever exceed **500 lines of code**.
+
+**Workflow:**
+* If a task requires adding code that would push a file over the 500-line limit, you must propose a plan to split the code into multiple smaller, modular files.
+* Clearly explain the purpose of each new file you propose.
+* Always prioritize code readability and maintainability through modular design.
+
+---
+
+## 3. General Behavior
+
+* Explain your reasoning clearly and concisely.
+* When you complete a task, provide a summary of the changes you made.
+* If you are unsure about any part of a request, ask for clarification before proceeding.
+
 # Overview
 
 This is a React-based business website for "Boots On The Ground" (BOTG), a professional real estate documentation service company operating in the Tri-State area. The application provides a modern, responsive landing page that showcases the company's visual documentation services for distressed properties, targeting real estate investors, agents, and property managers. The website features service listings with pricing, contact forms, and comprehensive company information presented through a clean, professional interface.
@@ -34,24 +71,6 @@ The application implements React Query (TanStack Query) for server state managem
 - **Local State**: Component-level state using React hooks for form handling and UI interactions
 - **Context Providers**: Tooltip and Toast providers for global UI state management
 
-## Backend Architecture
-The server uses Express.js with TypeScript, implementing a RESTful API structure with middleware for request logging and error handling.
-
-**Server Design:**
-- **Express.js**: Node.js web framework chosen for simplicity and flexibility
-- **TypeScript**: Ensures type safety across the full stack
-- **Middleware Architecture**: Request logging, JSON parsing, and error handling middleware
-- **Development Integration**: Vite integration for development mode with HMR support
-
-## Data Storage
-The application is configured to use PostgreSQL with Drizzle ORM for database operations, though the current implementation uses in-memory storage for simplicity.
-
-**Database Strategy:**
-- **Drizzle ORM**: Type-safe SQL toolkit for database operations
-- **PostgreSQL**: Production database (Neon Database configured)
-- **Schema Definition**: Centralized schema definitions in shared directory for type consistency
-- **Migration Support**: Drizzle Kit for database schema management
-
 # External Dependencies
 
 ## UI and Styling
@@ -64,12 +83,6 @@ The application is configured to use PostgreSQL with Drizzle ORM for database op
 ## State Management and Data Fetching
 - **@tanstack/react-query**: Server state management, caching, and data synchronization
 - **wouter**: Lightweight routing library for client-side navigation
-
-## Database and ORM
-- **drizzle-orm**: TypeScript-first ORM for database operations
-- **drizzle-zod**: Integration between Drizzle ORM and Zod for schema validation
-- **@neondatabase/serverless**: Serverless PostgreSQL database connection
-- **connect-pg-simple**: PostgreSQL session store for Express sessions
 
 ## Development and Build Tools
 - **Vite**: Fast build tool and development server with React plugin support
