@@ -14,7 +14,6 @@ requiredFiles = [".replit", "replit.nix"]
 
 # Deployment configuration
 [deployment]
-run = ["sh", "-c", "echo 'This is a static site deployment'"]
 deploymentTarget = "static"
 publicDir = "dist"
 buildCommand = "npm run build"
