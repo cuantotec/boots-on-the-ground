@@ -23,7 +23,7 @@ export default function App() {
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />
         <Route path="/state/:state" component={StatePage} />
-        <Route path="/city/:city" component={CityPage} />
+        <Route path="/city/:state/:city" component={CityPage} />
         <Route component={NotFound} />
       </Router>
     </QueryClientProvider>
