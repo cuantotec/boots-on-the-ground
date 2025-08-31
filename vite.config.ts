@@ -19,12 +19,18 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      // The alias still works correctly because it's an absolute path.
+      "@": path.resolve(__dirname, "client/src"),
       "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
+  // Set the source root to the 'client' directory.
+  // Vite will now automatically look for 'client/index.html' as the input.
+  root: "client",
   build: {
-    outDir: "dist",
+    // Set the output directory to an absolute path to the top-level 'dist' folder.
+    // This prevents Vite from creating a nested 'client' folder in the output.
+    outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
   },
   server: {
