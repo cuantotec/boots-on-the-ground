@@ -24,7 +24,7 @@ export default function App() {
         <Route path="/terms-of-service" component={TermsOfService} />
         <Route path="/state/:state" component={StatePage} />
         <Route path="/city/:state/:city" component={CityPage} />
-        <Route component={NotFound} />
+        <Route path="*" component={NotFound} />
       </Router>
     </QueryClientProvider>
   );
