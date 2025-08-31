@@ -1,0 +1,347 @@
+{
+  "metadata": {
+    "dataCollectionDate": "August 2025",
+    "crimeRateMethodology": "The 'Crime Rate' is categorized as Low, Moderate, or High by comparing the city's total crime rate per 1,000 residents (combining violent and property crime) against the U.S. national average. Data is primarily based on the most recent available FBI Uniform Crime Reporting (UCR) statistics, often compiled by sources like NeighborhoodScout. 'Low' indicates a rate significantly below the national average; 'Moderate' is near the national average; 'High' is significantly above the national average."
+  },
+  "new-jersey": {
+    "newark": {
+      "name": "Newark",
+      "state": "New Jersey",
+      "population": "305,344",
+      "medianHomePrice": "$460,000",
+      "averageRent": "$1,950",
+      "crimeRate": "High",
+      "marketDescription": "Newark's real estate market is experiencing significant revitalization, driven by major development projects and its proximity to NYC. While historically undervalued, prices are rising, offering strong investment potential, particularly in multifamily properties and transit-oriented developments.",
+      "keyEconomicDrivers": ["Transportation and Logistics (Port Newark, Newark Liberty International Airport)", "Higher Education (Rutgers-Newark, NJIT)", "Healthcare", "Finance (Prudential Financial, Audible)"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "jersey-city": {
+      "name": "Jersey City",
+      "state": "New Jersey",
+      "population": "286,670",
+      "medianHomePrice": "$725,000",
+      "averageRent": "$3,400",
+      "crimeRate": "Moderate",
+      "marketDescription": "Often called NYC's 'Sixth Borough,' Jersey City has a highly competitive market with strong demand for both rentals and sales. Luxury high-rises dominate the waterfront, while other neighborhoods offer diverse housing stock. The market is mature but continues to see steady appreciation.",
+      "keyEconomicDrivers": ["Financial Services (Wall Street West)", "Real Estate", "Healthcare", "Transportation and Logistics", "Technology"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Realtor.com (Aug 2025); Average Rent: RentCafe (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "paterson": {
+      "name": "Paterson",
+      "state": "New Jersey",
+      "population": "156,647",
+      "medianHomePrice": "$475,000",
+      "averageRent": "$1,800",
+      "crimeRate": "High",
+      "marketDescription": "Paterson's market is characterized by affordability compared to nearby cities, attracting first-time homebuyers and investors. The city is focused on redevelopment initiatives around its historic industrial core. Growth potential exists but is tied to the success of ongoing urban renewal projects.",
+      "keyEconomicDrivers": ["Manufacturing", "Healthcare (St. Joseph's University Medical Center)", "Retail", "Small Business"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "elizabeth": {
+      "name": "Elizabeth",
+      "state": "New Jersey",
+      "population": "134,283",
+      "medianHomePrice": "$505,000",
+      "averageRent": "$1,900",
+      "crimeRate": "High",
+      "marketDescription": "As a major transportation and shipping hub, Elizabeth has a stable, industry-driven housing market. The city offers a mix of urban and suburban living with relatively affordable prices. Investment opportunities are present in multifamily units catering to the city's workforce.",
+      "keyEconomicDrivers": ["Shipping and Logistics (Port Newark-Elizabeth)", "Retail (The Mills at Jersey Gardens)", "Manufacturing", "Healthcare"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Apartments.com (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "trenton": {
+      "name": "Trenton",
+      "state": "New Jersey",
+      "population": "90,457",
+      "medianHomePrice": "$230,000",
+      "averageRent": "$1,550",
+      "crimeRate": "High",
+      "marketDescription": "As the state capital, Trenton's market is heavily influenced by government employment. Home prices are among the most affordable in the state, presenting opportunities for investors willing to navigate a market with slower appreciation. Revitalization efforts are underway but face challenges.",
+      "keyEconomicDrivers": ["State Government", "Healthcare (Capital Health Regional Medical Center)", "Manufacturing", "Higher Education (Thomas Edison State University)"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "camden": {
+        "name": "Camden",
+        "state": "New Jersey",
+        "population": "71,791",
+        "medianHomePrice": "$150,000",
+        "averageRent": "$1,300",
+        "crimeRate": "High",
+        "marketDescription": "Camden is undergoing a significant transformation driven by public and private investment, particularly in its waterfront and downtown areas. While it remains one of the most affordable markets, it carries higher risk. The city's future real estate trajectory is closely tied to continued economic development and public safety improvements.",
+        "keyEconomicDrivers": ["Healthcare (Cooper University Health Care, Virtua)", "Education (Rutgers-Camden)", "Corporate Headquarters (Holtec International, Subaru of America)", "Technology"],
+        "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: RentCafe (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "atlantic-city": {
+        "name": "Atlantic City",
+        "state": "New Jersey",
+        "population": "38,469",
+        "medianHomePrice": "$225,000",
+        "averageRent": "$1,450",
+        "crimeRate": "High",
+        "marketDescription": "Atlantic City's real estate market is highly cyclical and tied to the casino and tourism industries. Non-casino development and a growing university presence are diversifying the economy. The market offers low entry prices but is considered volatile and high-risk for investors.",
+        "keyEconomicDrivers": ["Gaming and Hospitality", "Tourism", "Healthcare (AtlantiCare)", "Higher Education (Stockton University)"],
+        "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Realtor.com (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "clifton": {
+        "name": "Clifton",
+        "state": "New Jersey",
+        "population": "89,456",
+        "medianHomePrice": "$580,000",
+        "averageRent": "$2,200",
+        "crimeRate": "Low",
+        "marketDescription": "Clifton is a stable, suburban market with strong demand due to its good schools, safety, and commuter access to NYC. The housing stock is diverse, ranging from post-war single-family homes to modern apartments. The market is competitive with steady, reliable appreciation.",
+        "keyEconomicDrivers": ["Healthcare", "Retail", "Manufacturing", "Corporate Offices"],
+        "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Apartments.com (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "passaic": {
+        "name": "Passaic",
+        "state": "New Jersey",
+        "population": "70,084",
+        "medianHomePrice": "$499,000",
+        "averageRent": "$1,850",
+        "crimeRate": "High",
+        "marketDescription": "Passaic offers relative affordability for the North Jersey region, attracting a diverse population. The market is dominated by older, multi-family homes, presenting opportunities for investors focused on rental income. The city is working on redevelopment projects to spur growth.",
+        "keyEconomicDrivers": ["Retail", "Manufacturing", "Healthcare", "Small Business"],
+        "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "union-city": {
+        "name": "Union City",
+        "state": "New Jersey",
+        "population": "65,306",
+        "medianHomePrice": "$540,000",
+        "averageRent": "$2,300",
+        "crimeRate": "Moderate",
+        "marketDescription": "As one of the most densely populated cities in the U.S., Union City has a competitive housing market with a high concentration of multi-family buildings. Its close proximity to Manhattan makes it a popular choice for commuters. The rental market is particularly strong and is the primary focus for most investors.",
+        "keyEconomicDrivers": ["Retail", "Transportation", "Healthcare", "Proximity to NYC employment hubs"],
+        "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Realtor.com (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "bayonne": {
+        "name": "Bayonne",
+        "state": "New Jersey",
+        "population": "70,394",
+        "medianHomePrice": "$565,000",
+        "averageRent": "$2,450",
+        "crimeRate": "Low",
+        "marketDescription": "Bayonne is transitioning from an industrial past to a residential community, with significant new development along its waterfront. The city offers more space and value than neighboring Jersey City while maintaining good transit links. It's an emerging market with strong growth potential.",
+        "keyEconomicDrivers": ["Logistics and Shipping (Port Jersey)", "Healthcare", "Construction and Development", "Retail"],
+        "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: RentCafe (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "east-orange": {
+        "name": "East Orange",
+        "state": "New Jersey",
+        "population": "68,695",
+        "medianHomePrice": "$425,000",
+        "averageRent": "$1,750",
+        "crimeRate": "High",
+        "marketDescription": "East Orange is an affordable urban market with excellent commuter rail access to NYC. The city features a large stock of historic apartment buildings and single-family homes, attracting value-focused investors and buyers. The market is seeing renewed interest due to rising prices in surrounding areas.",
+        "keyEconomicDrivers": ["Healthcare", "Social Services", "Proximity to Newark and NYC employment", "Retail"],
+        "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Apartments.com (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "vineland": {
+        "name": "Vineland",
+        "state": "New Jersey",
+        "population": "60,865",
+        "medianHomePrice": "$300,000",
+        "averageRent": "$1,400",
+        "crimeRate": "Moderate",
+        "marketDescription": "Located in southern New Jersey, Vineland has an affordable and stable real estate market. It's characterized by a mix of suburban and rural properties with larger lot sizes. The market is less volatile than those in the northern part of the state, appealing to buyers seeking value and a slower pace.",
+        "keyEconomicDrivers": ["Agriculture and Food Processing (In-land's largest industry)", "Healthcare (Inspira Medical Center)", "Glass Manufacturing", "Government Services"],
+        "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Realtor.com (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "new-brunswick": {
+        "name": "New Brunswick",
+        "state": "New Jersey",
+        "population": "55,671",
+        "medianHomePrice": "$465,000",
+        "averageRent": "$2,500",
+        "crimeRate": "High",
+        "marketDescription": "Dominated by Rutgers University and a major healthcare sector, New Brunswick has a perpetually strong rental market. The city is a hub of innovation and has seen significant new residential and commercial development. Investment potential is high, especially for properties catering to students and medical professionals.",
+        "keyEconomicDrivers": ["Higher Education (Rutgers University)", "Healthcare (Robert Wood Johnson University Hospital, Saint Peter's University Hospital)", "Pharmaceuticals (Johnson & Johnson HQ)", "Technology"],
+        "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: RentCafe (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "hoboken": {
+        "name": "Hoboken",
+        "state": "New Jersey",
+        "population": "58,690",
+        "medianHomePrice": "$850,000",
+        "averageRent": "$3,950",
+        "crimeRate": "Low",
+        "marketDescription": "Hoboken is a premium, high-demand market due to its vibrant, walkable community and unparalleled access to Manhattan. The market is composed largely of condos and historic brownstones. While prices are high, it's considered a blue-chip market with stable, long-term investment value.",
+        "keyEconomicDrivers": ["Proximity to NYC Financial District", "Technology", "Higher Education (Stevens Institute of Technology)", "Retail and Hospitality"],
+        "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    }
+  },
+  "pennsylvania": {
+    "philadelphia": {
+      "name": "Philadelphia",
+      "state": "Pennsylvania",
+      "population": "1,567,258",
+      "medianHomePrice": "$285,000",
+      "averageRent": "$1,900",
+      "crimeRate": "High",
+      "marketDescription": "Philadelphia's market offers a unique combination of big-city amenities and relative affordability. There's strong demand in revitalized areas like Fishtown and University City, while other neighborhoods offer lower entry points. The city's 'eds and meds' economy provides a stable foundation for long-term growth.",
+      "keyEconomicDrivers": ["Healthcare (University of Pennsylvania Health System, Jefferson Health)", "Higher Education (UPenn, Temple, Drexel)", "Biotechnology and Pharmaceuticals", "Finance"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: RentCafe (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "pittsburgh": {
+      "name": "Pittsburgh",
+      "state": "Pennsylvania",
+      "population": "302,898",
+      "medianHomePrice": "$255,000",
+      "averageRent": "$1,650",
+      "crimeRate": "Moderate",
+      "marketDescription": "Transitioning from industrial roots, Pittsburgh is now a hub for technology, healthcare, and education. Its real estate market is known for its stability and affordability, attracting both young professionals and investors. The market is experiencing steady growth driven by its strong job sector.",
+      "keyEconomicDrivers": ["Healthcare (UPMC, Allegheny Health Network)", "Technology (Google, Uber, Duolingo)", "Higher Education (Carnegie Mellon, University of Pittsburgh)", "Advanced Manufacturing"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Realtor.com (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "allentown": {
+      "name": "Allentown",
+      "state": "Pennsylvania",
+      "population": "125,956",
+      "medianHomePrice": "$280,000",
+      "averageRent": "$1,700",
+      "crimeRate": "High",
+      "marketDescription": "Allentown is at the center of the Lehigh Valley's economic resurgence, with a downtown that has seen over a billion dollars in new development. The housing market is competitive, fueled by job growth and its strategic location between NYC and Philadelphia. It offers strong appreciation potential for investors.",
+      "keyEconomicDrivers": ["Healthcare (Lehigh Valley Health Network)", "Logistics and Warehousing", "Manufacturing", "Finance"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Apartments.com (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "erie": {
+      "name": "Erie",
+      "state": "Pennsylvania",
+      "population": "93,191",
+      "medianHomePrice": "$150,000",
+      "averageRent": "$950",
+      "crimeRate": "Moderate",
+      "marketDescription": "Erie offers one of the most affordable housing markets in the nation, located on the shores of Lake Erie. The market is stable, with slower appreciation compared to larger metro areas. Investment is focused on low-cost single-family homes and rental properties catering to the local workforce and student population.",
+      "keyEconomicDrivers": ["Manufacturing (Wabtec)", "Healthcare (UPMC Hamot)", "Higher Education (Gannon University, Penn State Behrend)", "Plastics Industry"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "reading": {
+      "name": "Reading",
+      "state": "Pennsylvania",
+      "population": "94,895",
+      "medianHomePrice": "$210,000",
+      "averageRent": "$1,400",
+      "crimeRate": "High",
+      "marketDescription": "Reading is an affordable market with a strong industrial and manufacturing base. The city has faced economic challenges but is seeing renewed interest from investors due to very low property prices and a steady rental demand. The market is considered high-risk, high-reward.",
+      "keyEconomicDrivers": ["Manufacturing", "Healthcare (Tower Health)", "Transportation", "Retail"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: RentCafe (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    }
+  },
+  "new-york": {
+    "new-york-city": {
+      "name": "New York City",
+      "state": "New York",
+      "population": "8,335,897",
+      "medianHomePrice": "$820,000",
+      "averageRent": "$4,100",
+      "crimeRate": "Moderate",
+      "marketDescription": "As a global financial and cultural center, NYC's real estate market is one of the most expensive and complex in the world. The market varies dramatically by borough, from ultra-luxury condos in Manhattan to more affordable single-family homes in Queens and Staten Island. It is a resilient, high-demand market with significant barriers to entry.",
+      "keyEconomicDrivers": ["Finance", "Technology", "Real Estate", "Healthcare", "Media and Entertainment", "Tourism"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: StreetEasy/Zillow (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: NYPD CompStat (2023-2024)"
+    },
+    "buffalo": {
+      "name": "Buffalo",
+      "state": "New York",
+      "population": "276,486",
+      "medianHomePrice": "$225,000",
+      "averageRent": "$1,300",
+      "crimeRate": "High",
+      "marketDescription": "Buffalo's real estate market has seen a remarkable resurgence, characterized by strong demand and rapid price appreciation. Driven by a growing healthcare and technology sector, the city remains highly affordable compared to other major metros. The market is very competitive, with significant investment flowing into neighborhood revitalization.",
+      "keyEconomicDrivers": ["Healthcare (Kaleida Health)", "Higher Education (University at Buffalo)", "Finance (M&T Bank HQ)", "Technology"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: RentCafe (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "rochester": {
+      "name": "Rochester",
+      "state": "New York",
+      "population": "209,474",
+      "medianHomePrice": "$215,000",
+      "averageRent": "$1,400",
+      "crimeRate": "High",
+      "marketDescription": "Rochester is known for its highly-ranked universities and a strong technology and optics industry. The housing market is very competitive and affordable, with home prices well below the national average. It's a seller's market with strong demand from both homebuyers and investors.",
+      "keyEconomicDrivers": ["Higher Education (University of Rochester, RIT)", "Healthcare (UR Medicine)", "Technology and Optics", "Manufacturing"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Realtor.com (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "yonkers": {
+      "name": "Yonkers",
+      "state": "New York",
+      "population": "209,510",
+      "medianHomePrice": "$650,000",
+      "averageRent": "$2,500",
+      "crimeRate": "Low",
+      "marketDescription": "As an inner suburb of NYC, Yonkers has a diverse and dynamic real estate market. It has seen a boom in luxury apartment construction along its waterfront, attracting residents priced out of the city. The market combines urban convenience with suburban appeal, leading to steady demand.",
+      "keyEconomicDrivers": ["Healthcare", "Retail", "Education", "Proximity to NYC"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: RentCafe (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "syracuse": {
+      "name": "Syracuse",
+      "state": "New York",
+      "population": "145,151",
+      "medianHomePrice": "$175,000",
+      "averageRent": "$1,350",
+      "crimeRate": "High",
+      "marketDescription": "Syracuse's market is one of the most affordable in the state, anchored by Syracuse University and a growing tech sector (e.g., Micron's planned investment). The city is poised for significant growth, making it an attractive target for investors seeking high potential returns. The current market is very competitive due to low inventory.",
+      "keyEconomicDrivers": ["Higher Education (Syracuse University)", "Healthcare", "Technology (Micron)", "Manufacturing"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    }
+  },
+  "connecticut": {
+    "bridgeport": {
+      "name": "Bridgeport",
+      "state": "Connecticut",
+      "population": "148,377",
+      "medianHomePrice": "$365,000",
+      "averageRent": "$1,850",
+      "crimeRate": "High",
+      "marketDescription": "Bridgeport is one of Connecticut's most affordable coastal cities, offering significant value compared to its Fairfield County neighbors. The city is focused on economic development and waterfront revitalization. Its market has strong investment potential, particularly in multi-family properties, but is tied to the city's ongoing recovery.",
+      "keyEconomicDrivers": ["Healthcare (Hartford HealthCare, Yale New Haven Health)", "Manufacturing", "Finance", "Higher Education (University of Bridgeport)"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Apartments.com (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "new-haven": {
+      "name": "New Haven",
+      "state": "Connecticut",
+      "population": "138,913",
+      "medianHomePrice": "$350,000",
+      "averageRent": "$2,300",
+      "crimeRate": "High",
+      "marketDescription": "Home to Yale University, New Haven has a robust and stable rental market. The city is a center for bioscience and healthcare, which fuels consistent housing demand. The market is a mix of historic homes and new construction, with strong investment opportunities near the university and downtown.",
+      "keyEconomicDrivers": ["Higher Education (Yale University)", "Healthcare (Yale New Haven Hospital)", "Biotechnology and Life Sciences", "Finance"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Realtor.com (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "hartford": {
+      "name": "Hartford",
+      "state": "Connecticut",
+      "population": "120,576",
+      "medianHomePrice": "$299,000",
+      "averageRent": "$1,600",
+      "crimeRate": "High",
+      "marketDescription": "As the state capital and the 'Insurance Capital of the World,' Hartford has a market anchored by the insurance and healthcare industries. Home prices are very affordable for a capital city, offering high rental yields for investors. Downtown revitalization projects are aiming to attract more residents and spur market growth.",
+      "keyEconomicDrivers": ["Insurance (The Hartford, Aetna, Travelers)", "Healthcare", "State Government", "Aerospace (Pratt & Whitney nearby)"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: RentCafe (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "stamford": {
+      "name": "Stamford",
+      "state": "Connecticut",
+      "population": "136,191",
+      "medianHomePrice": "$675,000",
+      "averageRent": "$3,200",
+      "crimeRate": "Low",
+      "marketDescription": "Stamford has a vibrant, corporate-driven real estate market with a large population of professionals commuting to NYC. The city has seen extensive development of luxury apartments and condos. It is a high-cost, high-demand market considered one of the safest bets in Connecticut for stable, long-term appreciation.",
+      "keyEconomicDrivers": ["Financial Services", "Corporate Headquarters", "Technology", "Healthcare", "Real Estate"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Zumper (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    },
+    "waterbury": {
+      "name": "Waterbury",
+      "state": "Connecticut",
+      "population": "114,197",
+      "medianHomePrice": "$270,000",
+      "averageRent": "$1,450",
+      "crimeRate": "High",
+      "marketDescription": "Waterbury offers some of the lowest property prices in the state, making it a focal point for value-oriented investors. Its market is driven by a local manufacturing and healthcare economy. The city presents an opportunity for cash-flow investments, particularly in multi-family housing.",
+      "keyEconomicDrivers": ["Healthcare", "Manufacturing", "Higher Education", "Retail"],
+      "dataSource": "Population: U.S. Census Bureau (2023 Est.); Median Home Price: Redfin (Aug 2025); Average Rent: Apartments.com (Aug 2025); Crime Rate: FBI UCR (2023 Data)"
+    }
+  },
+  "citiesWithDataUnavailable": {
+    "note": "Complete and recent data for all requested metrics was not consistently available for the remaining smaller cities. As per instructions, data has not been estimated for: Chester, Norristown, Upper Darby, Levittown (PA); New Rochelle, Mount Vernon, Schenectady, Utica, White Plains, Hempstead, Troy, Niagara Falls, Binghamton (NY); Norwalk, Danbury, New Britain, West Hartford, Greenwich, Hamden, Meriden, Bristol, Manchester, West Haven (CT)."
+  }
+}
