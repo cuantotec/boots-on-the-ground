@@ -174,9 +174,23 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300 text-sm" data-testid="text-copyright">
-            Copyright © 2025 Boots on the Ground - All Rights Reserved
-          </p>
+          <div className="flex flex-col items-center md:items-start">
+            <p className="text-gray-300 text-sm" data-testid="text-copyright">
+              Copyright © 2025 Boots on the Ground - All Rights Reserved
+            </p>
+            <p className="text-gray-400 text-xs mt-1">
+              Developed by{" "}
+              <a
+                href="https://cuantotec.com?ref=bootsontheground"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 transition-colors"
+                data-testid="link-developer"
+              >
+                Cuanto Technologies
+              </a>
+            </p>
+          </div>
           <div className="flex space-x-4 mt-4 md:mt-0 text-sm">
             <a
               href="/privacy-policy"
