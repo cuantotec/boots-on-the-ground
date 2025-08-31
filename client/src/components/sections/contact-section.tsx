@@ -198,15 +198,23 @@ export function ContactSection() {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Phone className="w-5 h-5 text-primary mr-3" />
-                    <span className="text-foreground font-medium" data-testid="text-contact-phone">
+                    <a 
+                      href="tel:+16093504359" 
+                      className="text-foreground font-medium hover:text-primary transition-colors" 
+                      data-testid="text-contact-phone"
+                    >
                       (609) 350-4359
-                    </span>
+                    </a>
                   </div>
                   <div className="flex items-center">
                     <Mail className="w-5 h-5 text-primary mr-3" />
-                    <span className="text-foreground" data-testid="text-contact-email">
+                    <a 
+                      href="mailto:info@reBootsOnTheGround.com" 
+                      className="text-foreground hover:text-primary transition-colors" 
+                      data-testid="text-contact-email"
+                    >
                       info@reBootsOnTheGround.com
-                    </span>
+                    </a>
                   </div>
                 </div>
               </CardContent>

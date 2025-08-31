@@ -99,8 +99,8 @@ export default function PrivacyPolicy() {
                     If you have questions about this Privacy Policy, please contact us:
                   </p>
                   <div className="space-y-2">
-                    <p><strong>Email:</strong> info@reBootsOnTheGround.com</p>
-                    <p><strong>Phone:</strong> (609) 350-4359</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@reBootsOnTheGround.com" className="hover:text-primary transition-colors">info@reBootsOnTheGround.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+16093504359" className="hover:text-primary transition-colors">(609) 350-4359</a></p>
                   </div>
                 </CardContent>
               </Card>

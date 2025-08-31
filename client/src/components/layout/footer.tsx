@@ -150,13 +150,23 @@ export function Footer() {
             <div className="space-y-2 text-gray-300">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                <span data-testid="text-phone">(609) 350-4359</span>
+                <a
+                  href="tel:+16093504359"
+                  className="hover:text-white transition-colors"
+                  data-testid="text-phone"
+                >
+                  (609) 350-4359
+                </a>
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                <span data-testid="text-email">
+                <a
+                  href="mailto:info@reBootsOnTheGround.com"
+                  className="hover:text-white transition-colors"
+                  data-testid="text-email"
+                >
                   info@reBootsOnTheGround.com
-                </span>
+                </a>
               </div>
             </div>
           </div>

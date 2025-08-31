@@ -14,12 +14,14 @@ export default function Contact() {
       icon: Phone,
       title: "Phone",
       details: "(609) 350-4359",
+      href: "tel:+16093504359",
       description: "Call us during business hours for immediate assistance"
     },
     {
       icon: Mail,
       title: "Email",
       details: "info@reBootsOnTheGround.com",
+      href: "mailto:info@reBootsOnTheGround.com",
       description: "Send us a message and we'll respond within 24 hours"
     },
     {
@@ -69,7 +71,16 @@ export default function Contact() {
                     <CardTitle className="text-lg">{info.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="font-semibold text-lg mb-2">{info.details}</p>
+                    {info.href ? (
+                      <a 
+                        href={info.href} 
+                        className="font-semibold text-lg mb-2 block hover:text-primary transition-colors"
+                      >
+                        {info.details}
+                      </a>
+                    ) : (
+                      <p className="font-semibold text-lg mb-2">{info.details}</p>
+                    )}
                     <p className="text-sm text-muted-foreground">{info.description}</p>
                   </CardContent>
                 </Card>
