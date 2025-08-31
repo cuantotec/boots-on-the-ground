@@ -8,6 +8,11 @@ import { queryClient } from "@/lib/queryClient";
 
 // Lazy load pages for better performance
 const Home = lazy(() => import("@/pages/home"));
+const About = lazy(() => import("@/pages/about"));
+const Services = lazy(() => import("@/pages/services"));
+const Contact = lazy(() => import("@/pages/contact"));
+const PrivacyPolicy = lazy(() => import("@/pages/privacy-policy"));
+const TermsOfService = lazy(() => import("@/pages/terms-of-service"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 const StatePage = lazy(() => import("@/pages/state-page"));
 const CityPage = lazy(() => import("@/pages/city-page"));
@@ -27,6 +32,11 @@ function App() {
         <Suspense fallback={<LoadingSpinner />}>
           <Switch>
             <Route path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/services" component={Services} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/privacy-policy" component={PrivacyPolicy} />
+            <Route path="/terms-of-service" component={TermsOfService} />
             <Route path="/location/:state" component={StatePage} />
             <Route path="/location/:state/:city" component={CityPage} />
             <Route component={NotFound} />

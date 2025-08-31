@@ -23,10 +23,10 @@ export function Navbar() {
   };
 
   const navItems = [
-    { label: "Home", href: "home" },
-    { label: "About", href: "about" },
-    { label: "Services", href: "services" },
-    { label: "Contact Us", href: "contact" },
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Contact Us", href: "/contact" },
   ];
 
   const locations = {
@@ -42,8 +42,8 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <button
-              onClick={() => handleNavClick("home")}
+            <a
+              href="/"
               className="flex items-center"
               data-testid="button-logo"
             >
@@ -52,21 +52,21 @@ export function Navbar() {
                 alt="Boots On The Ground Logo" 
                 className="h-12 w-auto" 
               />
-            </button>
+            </a>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
-                <button
+                <a
                   key={item.href}
-                  onClick={() => handleNavClick(item.href)}
+                  href={item.href}
                   className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                  data-testid={`link-nav-${item.href}`}
+                  data-testid={`link-nav-${item.href.replace('/', '')}`}
                 >
                   {item.label}
-                </button>
+                </a>
               ))}
               
               {/* Locations Dropdown */}
@@ -106,11 +106,11 @@ export function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button
-              onClick={() => handleNavClick("services")}
+              asChild
               className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-2 rounded-md text-sm font-semibold"
               data-testid="button-order-now"
             >
-              Order Now
+              <a href="/services">Order Now</a>
             </Button>
           </div>
 
@@ -138,21 +138,23 @@ export function Navbar() {
         <div className="md:hidden bg-background border-b border-border">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
-              <button
+              <a
                 key={item.href}
-                onClick={() => handleNavClick(item.href)}
+                href={item.href}
                 className="text-foreground hover:text-primary block w-full text-left px-3 py-2 rounded-md text-base font-medium"
-                data-testid={`link-mobile-${item.href}`}
+                data-testid={`link-mobile-${item.href.replace('/', '')}`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
-              </button>
+              </a>
             ))}
             <Button
-              onClick={() => handleNavClick("services")}
+              asChild
               className="bg-accent hover:bg-accent/90 text-accent-foreground w-full mt-4"
               data-testid="button-mobile-order-now"
+              onClick={() => setIsMenuOpen(false)}
             >
-              Order Now
+              <a href="/services">Order Now</a>
             </Button>
           </div>
         </div>

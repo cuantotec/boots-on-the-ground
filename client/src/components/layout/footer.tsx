@@ -102,14 +102,14 @@ export function Footer() {
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0 text-sm">
             <a 
-              href="#" 
+              href="/privacy-policy" 
               className="text-gray-300 hover:text-white transition-colors"
               data-testid="link-privacy-policy"
             >
               Privacy Policy
             </a>
             <a 
-              href="#" 
+              href="/terms-of-service" 
               className="text-gray-300 hover:text-white transition-colors"
               data-testid="link-terms-of-service"
             >
