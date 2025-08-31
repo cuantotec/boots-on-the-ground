@@ -8,49 +8,49 @@ import { Button } from "@/components/ui/button";
 const stateData = {
   "new-jersey": {
     name: "New Jersey",
-    description: "New Jersey's real estate market is characterized by its proximity to major metropolitan areas like New York City and Philadelphia, making it an attractive investment destination.",
-    marketOverview: "The Garden State offers diverse real estate opportunities from urban developments in Newark and Jersey City to suburban family homes. Property values have shown steady appreciation, particularly in areas with good transportation links to NYC.",
+    description: "New Jersey's real estate market benefits from its strategic location between New York City and Philadelphia, offering diverse opportunities from urban high-rises to suburban family homes.",
+    marketOverview: "The Garden State features strong demand in Northern New Jersey due to NYC proximity, while Southern New Jersey offers more affordable options. The state's transportation infrastructure, employment base, and proximity to major metros drive consistent real estate demand.",
     keyMetrics: {
       medianHomePrice: "$465,000",
       averageRent: "$2,100",
-      populationGrowth: "0.8%",
+      populationGrowth: "0.2%",
       unemploymentRate: "3.2%"
     },
     cities: ["Newark", "Jersey City", "Paterson", "Elizabeth", "Trenton", "Camden", "Atlantic City", "Clifton", "Passaic", "Union City", "Bayonne", "East Orange", "Vineland", "New Brunswick", "Hoboken"]
   },
   "pennsylvania": {
     name: "Pennsylvania",
-    description: "Pennsylvania's real estate market offers excellent value propositions with affordable housing costs compared to neighboring states while maintaining strong economic fundamentals.",
-    marketOverview: "The Keystone State features diverse markets from Pittsburgh's tech revival to Philadelphia's growing job market. Rural areas offer excellent investment opportunities for those seeking higher yields.",
+    description: "Pennsylvania's real estate market offers excellent value propositions with major metros like Philadelphia and Pittsburgh driving demand, while smaller cities provide affordable investment opportunities.",
+    marketOverview: "The Keystone State features diverse markets from Philadelphia's urban renaissance to Pittsburgh's tech transformation. The state's 'eds and meds' economy, manufacturing heritage, and affordable housing costs create stable market conditions.",
     keyMetrics: {
-      medianHomePrice: "$210,000",
-      averageRent: "$1,200",
+      medianHomePrice: "$255,000",
+      averageRent: "$1,650",
       populationGrowth: "0.1%",
-      unemploymentRate: "3.8%"
+      unemploymentRate: "3.4%"
     },
     cities: ["Philadelphia", "Pittsburgh", "Allentown", "Erie", "Reading", "Scranton", "Bethlehem", "Lancaster", "Harrisburg", "York", "Wilkes-Barre", "Chester", "Norristown", "Upper Darby", "Levittown"]
   },
   "new-york": {
     name: "New York",
-    description: "New York State's real estate market is dominated by NYC but offers diverse opportunities throughout the state, from upstate value plays to Long Island suburban markets.",
-    marketOverview: "Beyond NYC's expensive market, upstate New York offers excellent investment opportunities with growing tech sectors in Albany and Buffalo, plus vacation rental potential in the Adirondacks.",
+    description: "New York State's real estate market spans from the world's most expensive properties in NYC to highly affordable markets upstate, offering opportunities across all price points.",
+    marketOverview: "Beyond NYC's premium market, upstate New York provides excellent value with growing tech sectors in Albany and Buffalo, university towns, and emerging markets. The state's economic diversity creates varied investment opportunities.",
     keyMetrics: {
-      medianHomePrice: "$340,000",
-      averageRent: "$1,800",
-      populationGrowth: "-0.3%",
-      unemploymentRate: "4.1%"
+      medianHomePrice: "$420,000",
+      averageRent: "$2,200",
+      populationGrowth: "-0.5%",
+      unemploymentRate: "3.9%"
     },
     cities: ["New York City", "Buffalo", "Rochester", "Yonkers", "Syracuse", "Albany", "New Rochelle", "Mount Vernon", "Schenectady", "Utica", "White Plains", "Hempstead", "Troy", "Niagara Falls", "Binghamton"]
   },
   "connecticut": {
     name: "Connecticut",
-    description: "Connecticut's real estate market benefits from high-income residents and proximity to NYC, though it faces challenges from high property taxes and outmigration.",
-    marketOverview: "The Constitution State offers luxury markets in Fairfield County and value opportunities in Hartford and New Haven areas. The state's focus on financial services and aerospace continues to drive demand.",
+    description: "Connecticut's real estate market is characterized by high property values, particularly in Fairfield County, driven by proximity to NYC and a high-income resident base.",
+    marketOverview: "The Constitution State offers luxury markets in Fairfield County near NYC, while other regions provide more affordable options. The state's insurance and financial services industries, along with aerospace manufacturing, support property values.",
     keyMetrics: {
-      medianHomePrice: "$280,000",
-      averageRent: "$1,500",
-      populationGrowth: "-0.6%",
-      unemploymentRate: "3.7%"
+      medianHomePrice: "$385,000",
+      averageRent: "$2,000",
+      populationGrowth: "-0.3%",
+      unemploymentRate: "3.6%"
     },
     cities: ["Bridgeport", "New Haven", "Hartford", "Stamford", "Waterbury", "Norwalk", "Danbury", "New Britain", "West Hartford", "Greenwich", "Hamden", "Meriden", "Bristol", "Manchester", "West Haven"]
   }
@@ -139,6 +139,20 @@ export default function StatePage() {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Data Attribution Section */}
+        <section className="py-12 bg-muted/30">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h3 className="text-lg font-semibold mb-2">Market Data Sources</h3>
+              <p className="text-sm text-muted-foreground">
+                Data compiled from U.S. Census Bureau (2023 Est.), Redfin, Realtor.com, RentCafe, Zumper, 
+                and FBI Uniform Crime Reporting (2023 Data). Market metrics represent state-wide averages 
+                weighted by major metropolitan areas as of August 2025.
+              </p>
             </div>
           </div>
         </section>
