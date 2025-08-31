@@ -1,3 +1,4 @@
+
 import { Router, Route } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Home from "./pages/home";
@@ -22,9 +23,10 @@ export default function App() {
         <Route path="/contact" component={Contact} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />
+        <Route path="/location/:state" component={StatePage} />
         <Route path="/state/:state" component={StatePage} />
         <Route path="/city/:state/:city" component={CityPage} />
-        <Route path="*" component={NotFound} />
+        <Route component={NotFound} />
       </Router>
     </QueryClientProvider>
   );
