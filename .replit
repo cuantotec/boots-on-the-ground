@@ -6,8 +6,9 @@ channel = "stable-24_05"
 
 [deployment]
 deploymentTarget = "static"
-build = "npm run build"
+build = ["sh", "-c", "npm run build"]
 publicDir = "dist"
+run = ["sh", "-c", ""]
 
 [[deployment.rewrites]]
 from = "/*"
@@ -31,7 +32,6 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-
 args = "vite client"
 waitForPort = 5000
 
@@ -42,5 +42,4 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-
-args = "vite client"
+args = "vite"
