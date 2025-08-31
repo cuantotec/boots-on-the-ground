@@ -25,7 +25,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="md:col-span-2">
             <img 
-              src="https://placehold.co/400x100/FFFFFF/1E3A8A?text=BOTG+Logo" 
+              src="/logo.svg" 
               alt="Boots On The Ground Logo" 
               className="h-12 w-auto mb-4" 
             />

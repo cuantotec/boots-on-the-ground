@@ -48,7 +48,7 @@ export function Navbar() {
               data-testid="button-logo"
             >
               <img 
-                src="https://placehold.co/400x100/1E3A8A/FFFFFF?text=BOTG+Logo" 
+                src="/logo.svg" 
                 alt="Boots On The Ground Logo" 
                 className="h-12 w-auto" 
               />
