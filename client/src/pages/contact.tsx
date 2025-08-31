@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Mail, MapPin, Clock, MessageSquare } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageSquare, CheckCircle } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 export default function Contact() {
   const contactInfo = [
@@ -43,6 +44,15 @@ export default function Contact() {
     // Handle form submission here
     console.log("Form submitted");
   };
+
+  const serviceAreas = [
+    "New Jersey",
+    "New York", 
+    "Pennsylvania",
+    "Connecticut",
+    "Delaware",
+    "Maryland"
+  ];
 
   return (
     <div className="min-h-screen">
