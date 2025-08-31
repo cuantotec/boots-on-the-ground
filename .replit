@@ -48,3 +48,15 @@ value = "public, max-age=31536000, immutable"
 path = "*.svg"
 name = "Cache-Control"
 value = "public, max-age=31536000, immutable"
+
+[workflows]
+runButton = "Development Server"
+
+[[workflows.workflow]]
+name = "Development Server"
+author = 42240710
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"
