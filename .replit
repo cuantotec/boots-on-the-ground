@@ -9,18 +9,10 @@ channel = "stable-24_05"
 deploymentTarget = "static"
 build = ["sh", "-c", "npm run build"]
 publicDir = "dist/public"
-run = ["sh", "-c", ""]
 
 [[deployment.rewrites]]
 from = "/*"
 to = "/index.html"
-
-[[ports]]
-localPort = 5000
-externalPort = 80
-
-[env]
-PORT = "5000"
 
 [workflows]
 runButton = "Frontend Dev"
