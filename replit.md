@@ -41,7 +41,7 @@ This is a React-based business website for "Boots On The Ground" (BOTG), a profe
 
 # User Preferences
 
-Preferred communication style: Simple, everyday language.
+Preferred communication style: developer language.
 
 # System Architecture
 
@@ -62,39 +62,3 @@ The application uses a comprehensive design system built on Tailwind CSS with sh
 - **Tailwind CSS**: Utility-first CSS framework for rapid styling and responsive design
 - **CSS Custom Properties**: Uses CSS variables for theme consistency and easy customization
 - **Responsive Design**: Mobile-first approach with responsive breakpoints for desktop, tablet, and mobile
-
-## State Management and Data Flow
-The application implements React Query (TanStack Query) for server state management and uses React's built-in state management for local component state.
-
-**State Architecture:**
-- **React Query**: Handles API communication, caching, and server state synchronization
-- **Local State**: Component-level state using React hooks for form handling and UI interactions
-- **Context Providers**: Tooltip and Toast providers for global UI state management
-
-# External Dependencies
-
-## UI and Styling
-- **@radix-ui/react-***: Comprehensive set of accessible UI primitives for building the component library
-- **shadcn/ui**: Pre-built component system built on top of Radix UI primitives
-- **Tailwind CSS**: Utility-first CSS framework for styling
-- **class-variance-authority**: Utility for creating consistent component variants
-- **clsx**: Utility for conditional CSS class management
-
-## State Management and Data Fetching
-- **@tanstack/react-query**: Server state management, caching, and data synchronization
-- **wouter**: Lightweight routing library for client-side navigation
-
-## Development and Build Tools
-- **Vite**: Fast build tool and development server with React plugin support
-- **TypeScript**: Type checking and enhanced development experience
-- **@replit/vite-plugin-***: Replit-specific plugins for development environment integration
-
-## Form Handling and Validation
-- **react-hook-form**: Performant form library with minimal re-renders
-- **@hookform/resolvers**: Validation resolvers for react-hook-form
-- **zod**: Schema validation library for type-safe form validation
-
-## Utilities and Helpers
-- **date-fns**: Date manipulation library
-- **nanoid**: Unique ID generation
-- **lucide-react**: Icon library with React components
