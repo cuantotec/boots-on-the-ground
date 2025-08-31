@@ -15,6 +15,7 @@ import {
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [mobileLocationsOpen, setMobileLocationsOpen] = useState<string | null>(null);
   const { scrollToSection } = useScrollTo();
 
   const handleNavClick = (sectionId: string) => {
@@ -148,6 +149,46 @@ export function Navbar() {
                 {item.label}
               </a>
             ))}
+            
+            {/* Mobile Locations Section */}
+            <div className="space-y-1">
+              <div className="text-foreground px-3 py-2 text-base font-medium">
+                Locations
+              </div>
+              {Object.entries(locations).map(([state, cities]) => (
+                <div key={state} className="ml-3">
+                  <button
+                    onClick={() => setMobileLocationsOpen(mobileLocationsOpen === state ? null : state)}
+                    className="text-foreground hover:text-primary flex items-center justify-between w-full text-left px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    {state}
+                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileLocationsOpen === state ? 'rotate-180' : ''}`} />
+                  </button>
+                  {mobileLocationsOpen === state && (
+                    <div className="ml-3 space-y-1">
+                      <a
+                        href={`/location/${state.toLowerCase().replace(' ', '-')}`}
+                        className="text-gray-600 hover:text-primary block px-3 py-1 text-sm font-semibold"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        View {state}
+                      </a>
+                      {cities.map((city) => (
+                        <a
+                          key={city}
+                          href={`/location/${state.toLowerCase().replace(' ', '-')}/${city.toLowerCase().replace(/\s+/g, '-')}`}
+                          className="text-gray-600 hover:text-primary block px-3 py-1 text-sm"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {city}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+            
             <Button
               asChild
               className="bg-accent hover:bg-accent/90 text-accent-foreground w-full mt-4"
