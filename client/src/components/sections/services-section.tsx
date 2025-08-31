@@ -6,27 +6,29 @@ export function ServicesSection() {
       title: "Property Photography",
       description: "High-quality interior and exterior photos showcasing property condition and unique features.",
       price: 150,
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "/assets/property-photography.jpg",
       imageAlt: "Professional property photography services"
     },
     {
       title: "Video Walkthrough",
       description: "Comprehensive video tours providing detailed property assessments and condition reporting.",
       price: 200,
-      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "/assets/video-walkthrough.jpg",
       imageAlt: "Professional video walkthrough services"
     },
     {
       title: "Property Inspection",
       description: "Detailed on-site inspections with comprehensive reports on property condition and potential issues.",
       price: 300,
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "/assets/property-inspection.jpg",
       imageAlt: "Professional property inspection services"
     },
     {
       title: "Virtual Tours",
       description: "Interactive 360° virtual tours allowing remote property exploration and assessment.",
       price: 250,
+      image: "/assets/virtual-tours.jpg",
+      imageAlt: "Professional virtual tour documentation services",
       image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
       imageAlt: "360-degree virtual tour services"
     },
