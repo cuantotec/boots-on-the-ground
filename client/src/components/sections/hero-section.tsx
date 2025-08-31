@@ -5,7 +5,7 @@ export function HeroSection() {
   const { scrollToSection } = useScrollTo();
 
   return (
-    <section id="home" className="hero-bg min-h-screen flex items-center justify-center text-center text-white">
+    <section id="home" className="min-h-screen flex items-center justify-center text-center text-white relative" style={{ backgroundImage: "url('/assets/hero-background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="hero-title text-4xl md:text-6xl font-bold mb-6" data-testid="text-hero-title">
           Boots on the ground for your real estate investment needs

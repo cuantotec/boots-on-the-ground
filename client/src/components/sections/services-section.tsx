@@ -28,22 +28,20 @@ export function ServicesSection() {
       description: "Interactive 360° virtual tours allowing remote property exploration and assessment.",
       price: 250,
       image: "/assets/virtual-tours.jpg",
-      imageAlt: "Professional virtual tour documentation services",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      imageAlt: "360-degree virtual tour services"
+      imageAlt: "Professional 360-degree virtual tour services"
     },
     {
       title: "Drone Footage",
       description: "Aerial photography and videography providing comprehensive property overviews and neighborhood context.",
       price: 175,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "/assets/drone-footage.jpg",
       imageAlt: "Professional drone aerial photography services"
     },
     {
       title: "Custom Reports",
       description: "Tailored property assessment reports with detailed analysis and investment recommendations.",
       price: 400,
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "/assets/custom-reports.jpg",
       imageAlt: "Custom property reporting services"
     }
   ];
