@@ -6,26 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Users, Target, Award, Clock } from "lucide-react";
 
 export default function About() {
-  const teamMembers = [
-    {
-      name: "John Smith",
-      role: "Founder & Lead Inspector",
-      experience: "15+ years in real estate",
-      image: "https://placehold.co/300x300/3B82F6/FFFFFF?text=JS"
-    },
-    {
-      name: "Sarah Johnson",
-      role: "Senior Documentation Specialist",
-      experience: "10+ years in property assessment",
-      image: "https://placehold.co/300x300/3B82F6/FFFFFF?text=SJ"
-    },
-    {
-      name: "Mike Rodriguez",
-      role: "Field Operations Manager",
-      experience: "8+ years in construction",
-      image: "https://placehold.co/300x300/3B82F6/FFFFFF?text=MR"
-    }
-  ];
+  // Team information will be updated when available
 
   const values = [
     {
@@ -80,8 +61,8 @@ export default function About() {
                 </p>
                 <p className="text-lg text-muted-foreground mb-6">
                   Our team combines deep real estate knowledge with cutting-edge documentation technology to provide 
-                  comprehensive visual assessments that save our clients time, money, and risk. We've documented 
-                  over 5,000 properties and helped facilitate millions in real estate transactions.
+                  comprehensive visual assessments that save our clients time, money, and risk. We focus on delivering 
+                  accurate, detailed property documentation that real estate professionals can trust.
                 </p>
                 <Button size="lg" className="mt-4">
                   View Our Services
@@ -123,57 +104,13 @@ export default function About() {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section className="py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Meet Our Team</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Experienced professionals dedicated to providing the highest quality property documentation services.
-              </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              {teamMembers.map((member, index) => (
-                <Card key={index} className="text-center">
-                  <CardHeader>
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-32 h-32 rounded-full mx-auto mb-4"
-                    />
-                    <CardTitle>{member.name}</CardTitle>
-                    <p className="text-primary font-semibold">{member.role}</p>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">{member.experience}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Stats Section */}
+        {/* Professional Experience Section */}
         <section className="py-20 bg-primary text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-4 gap-8 text-center">
-              <div>
-                <h3 className="text-4xl font-bold mb-2">5,000+</h3>
-                <p className="text-lg">Properties Documented</p>
-              </div>
-              <div>
-                <h3 className="text-4xl font-bold mb-2">98%</h3>
-                <p className="text-lg">Client Satisfaction</p>
-              </div>
-              <div>
-                <h3 className="text-4xl font-bold mb-2">24hrs</h3>
-                <p className="text-lg">Average Turnaround</p>
-              </div>
-              <div>
-                <h3 className="text-4xl font-bold mb-2">4</h3>
-                <p className="text-lg">States Covered</p>
-              </div>
-            </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl font-bold mb-6">Professional Excellence</h2>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+              Our commitment to accuracy and reliability has made us a trusted partner for real estate professionals throughout the Tri-State area.
+            </p>
           </div>
         </section>
       </main>
