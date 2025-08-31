@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { useScrollTo } from "@/hooks/use-scroll-to";
 import {
   DropdownMenu,
@@ -173,16 +174,20 @@ export function Navbar() {
                       >
                         View {state}
                       </a>
-                      {cities.map((city) => (
-                        <a
-                          key={city}
-                          href={`/location/${state.toLowerCase().replace(' ', '-')}/${city.toLowerCase().replace(/\s+/g, '-')}`}
-                          className="text-gray-600 hover:text-primary block px-3 py-1 text-sm"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {city}
-                        </a>
-                      ))}
+                      <ScrollArea className="max-h-48">
+                        <div className="space-y-1">
+                          {cities.map((city) => (
+                            <a
+                              key={city}
+                              href={`/location/${state.toLowerCase().replace(' ', '-')}/${city.toLowerCase().replace(/\s+/g, '-')}`}
+                              className="text-gray-600 hover:text-primary block px-3 py-1 text-sm"
+                              onClick={() => setIsMenuOpen(false)}
+                            >
+                              {city}
+                            </a>
+                          ))}
+                        </div>
+                      </ScrollArea>
                     </div>
                   )}
                 </div>
