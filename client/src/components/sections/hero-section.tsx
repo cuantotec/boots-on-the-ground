@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useScrollTo } from "@/hooks/use-scroll-to";
-import BlurText from "@/src/TextAnimations/BlurText/BlurText";
+import BlurText from "@/../../src/TextAnimations/BlurText/BlurText";
 
 export function HeroSection() {
   const { scrollToSection } = useScrollTo();
