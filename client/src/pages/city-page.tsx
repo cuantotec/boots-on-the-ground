@@ -248,6 +248,126 @@ const cityData = {
         averageRent: "$800",
         crimeRate: "High"
       }
+    },
+    "scranton": {
+      name: "Scranton",
+      state: "Pennsylvania",
+      description: "Scranton offers affordable real estate opportunities with a stable economy supported by healthcare and education sectors.",
+      marketInfo: "Known as 'The Electric City', Scranton provides value investments with steady rental demand from local universities.",
+      keyStats: {
+        population: "76,328",
+        medianHomePrice: "$95,000",
+        averageRent: "$900",
+        crimeRate: "Moderate"
+      }
+    },
+    "bethlehem": {
+      name: "Bethlehem",
+      state: "Pennsylvania",
+      description: "Bethlehem combines historic charm with modern development, offering diverse real estate investment opportunities.",
+      marketInfo: "Part of the Lehigh Valley, Bethlehem benefits from proximity to NYC and Philadelphia while maintaining affordable property values.",
+      keyStats: {
+        population: "75,781",
+        medianHomePrice: "$220,000",
+        averageRent: "$1,200",
+        crimeRate: "Low"
+      }
+    },
+    "lancaster": {
+      name: "Lancaster",
+      state: "Pennsylvania",
+      description: "Lancaster offers rural charm with steady economic fundamentals and affordable real estate opportunities.",
+      marketInfo: "Known for its Amish heritage, Lancaster provides unique investment opportunities in both residential and tourism-related properties.",
+      keyStats: {
+        population: "59,322",
+        medianHomePrice: "$160,000",
+        averageRent: "$1,000",
+        crimeRate: "Low"
+      }
+    },
+    "harrisburg": {
+      name: "Harrisburg",
+      state: "Pennsylvania",
+      description: "As Pennsylvania's capital, Harrisburg offers government-stable employment and reasonable real estate values.",
+      marketInfo: "The capital city provides steady demand from government workers and reasonable property values compared to major metros.",
+      keyStats: {
+        population: "49,528",
+        medianHomePrice: "$85,000",
+        averageRent: "$800",
+        crimeRate: "High"
+      }
+    },
+    "york": {
+      name: "York",
+      state: "Pennsylvania",
+      description: "York offers affordable real estate with growing manufacturing and distribution sectors driving demand.",
+      marketInfo: "Known for manufacturing and logistics, York provides affordable housing with steady employment opportunities.",
+      keyStats: {
+        population: "44,800",
+        medianHomePrice: "$110,000",
+        averageRent: "$900",
+        crimeRate: "Moderate"
+      }
+    },
+    "wilkes-barre": {
+      name: "Wilkes-Barre",
+      state: "Pennsylvania",
+      description: "Wilkes-Barre offers value opportunities in northeastern Pennsylvania with affordable housing stock.",
+      marketInfo: "A former coal mining city with affordable properties and potential for redevelopment investments.",
+      keyStats: {
+        population: "44,328",
+        medianHomePrice: "$70,000",
+        averageRent: "$700",
+        crimeRate: "Moderate"
+      }
+    },
+    "chester": {
+      name: "Chester",
+      state: "Pennsylvania",
+      description: "Chester presents significant value opportunities for investors willing to participate in urban renewal efforts.",
+      marketInfo: "Located near Philadelphia, Chester offers extremely affordable properties with potential for appreciation through redevelopment.",
+      keyStats: {
+        population: "33,855",
+        medianHomePrice: "$45,000",
+        averageRent: "$600",
+        crimeRate: "High"
+      }
+    },
+    "norristown": {
+      name: "Norristown",
+      state: "Pennsylvania",
+      description: "Norristown offers suburban living with good access to Philadelphia and reasonable property values.",
+      marketInfo: "Montgomery County seat with good transportation access and steady demand from Philadelphia commuters.",
+      keyStats: {
+        population: "34,324",
+        medianHomePrice: "$180,000",
+        averageRent: "$1,100",
+        crimeRate: "Moderate"
+      }
+    },
+    "upper-darby": {
+      name: "Upper Darby",
+      state: "Pennsylvania",
+      description: "Upper Darby provides suburban opportunities with excellent access to Philadelphia's job market.",
+      marketInfo: "Close-in Philadelphia suburb with good transportation and reasonable property values for the region.",
+      keyStats: {
+        population: "84,144",
+        medianHomePrice: "$200,000",
+        averageRent: "$1,200",
+        crimeRate: "Low"
+      }
+    },
+    "levittown": {
+      name: "Levittown",
+      state: "Pennsylvania",
+      description: "Levittown offers planned community living with stable property values and family-friendly amenities.",
+      marketInfo: "Historic planned community with stable housing market and good schools attracting families.",
+      keyStats: {
+        population: "52,983",
+        medianHomePrice: "$280,000",
+        averageRent: "$1,400",
+        crimeRate: "Very Low"
+      }
     }
   },
   "new-york": {
@@ -307,6 +427,126 @@ const cityData = {
       keyStats: {
         population: "148,620",
         medianHomePrice: "$85,000",
+        averageRent: "$800",
+        crimeRate: "Moderate"
+      }
+    },
+    "albany": {
+      name: "Albany",
+      state: "New York",
+      description: "As New York's capital, Albany offers government stability and growing tech sector creating steady real estate demand.",
+      marketInfo: "The capital region benefits from stable government employment and emerging tech companies, supporting property values.",
+      keyStats: {
+        population: "97,856",
+        medianHomePrice: "$180,000",
+        averageRent: "$1,100",
+        crimeRate: "Moderate"
+      }
+    },
+    "new-rochelle": {
+      name: "New Rochelle",
+      state: "New York",
+      description: "New Rochelle offers suburban living with excellent NYC access, making it attractive for commuters and investors.",
+      marketInfo: "Westchester County location with good train access to Manhattan and ongoing downtown redevelopment.",
+      keyStats: {
+        population: "79,726",
+        medianHomePrice: "$650,000",
+        averageRent: "$2,400",
+        crimeRate: "Low"
+      }
+    },
+    "mount-vernon": {
+      name: "Mount Vernon",
+      state: "New York",
+      description: "Mount Vernon provides more affordable Westchester County options with good transportation to NYC.",
+      marketInfo: "Dense urban environment with good transit access and more affordable prices than surrounding Westchester communities.",
+      keyStats: {
+        population: "67,292",
+        medianHomePrice: "$420,000",
+        averageRent: "$1,800",
+        crimeRate: "Moderate"
+      }
+    },
+    "schenectady": {
+      name: "Schenectady",
+      state: "New York",
+      description: "Schenectady offers affordable real estate in the Capital Region with ongoing revitalization efforts.",
+      marketInfo: "Part of the Albany metro area with affordable housing and growing tech sector presence.",
+      keyStats: {
+        population: "65,336",
+        medianHomePrice: "$120,000",
+        averageRent: "$900",
+        crimeRate: "Moderate"
+      }
+    },
+    "utica": {
+      name: "Utica",
+      state: "New York",
+      description: "Utica presents value opportunities with extremely affordable real estate and ongoing urban renewal.",
+      marketInfo: "Former industrial city with very affordable properties and refugee resettlement programs driving rental demand.",
+      keyStats: {
+        population: "65,283",
+        medianHomePrice: "$65,000",
+        averageRent: "$700",
+        crimeRate: "Moderate"
+      }
+    },
+    "white-plains": {
+      name: "White Plains",
+      state: "New York",
+      description: "White Plains is Westchester's commercial hub with strong employment and high-end real estate opportunities.",
+      marketInfo: "Major business center with corporate headquarters and excellent transportation to NYC.",
+      keyStats: {
+        population: "58,109",
+        medianHomePrice: "$680,000",
+        averageRent: "$2,600",
+        crimeRate: "Low"
+      }
+    },
+    "hempstead": {
+      name: "Hempstead",
+      state: "New York",
+      description: "Hempstead offers Long Island opportunities with diverse housing stock and good transportation.",
+      marketInfo: "Nassau County location with diverse rental market and good access to NYC employment centers.",
+      keyStats: {
+        population: "59,169",
+        medianHomePrice: "$480,000",
+        averageRent: "$2,200",
+        crimeRate: "Moderate"
+      }
+    },
+    "troy": {
+      name: "Troy",
+      state: "New York",
+      description: "Troy combines historic architecture with affordable prices and proximity to Albany's job market.",
+      marketInfo: "Historic Hudson River city with affordable Victorian housing and growing arts scene.",
+      keyStats: {
+        population: "51,401",
+        medianHomePrice: "$140,000",
+        averageRent: "$1,000",
+        crimeRate: "Moderate"
+      }
+    },
+    "niagara-falls": {
+      name: "Niagara Falls",
+      state: "New York",
+      description: "Niagara Falls offers tourism-related real estate opportunities and affordable residential properties.",
+      marketInfo: "Tourism-dependent economy with opportunities in both residential and hospitality sectors.",
+      keyStats: {
+        population: "47,978",
+        medianHomePrice: "$75,000",
+        averageRent: "$700",
+        crimeRate: "High"
+      }
+    },
+    "binghamton": {
+      name: "Binghamton",
+      state: "New York",
+      description: "Binghamton offers extremely affordable real estate with university-driven rental demand.",
+      marketInfo: "Home to Binghamton University with very affordable housing and steady student rental market.",
+      keyStats: {
+        population: "44,819",
+        medianHomePrice: "$80,000",
         averageRent: "$800",
         crimeRate: "Moderate"
       }

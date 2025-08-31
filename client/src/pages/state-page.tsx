@@ -132,7 +132,7 @@ export default function StatePage() {
                       Professional real estate documentation services in {city}.
                     </p>
                     <Button asChild variant="outline" className="w-full">
-                      <a href={`/location/${state}/${city.toLowerCase().replace(' ', '-')}`}>
+                      <a href={`/location/${state}/${city.toLowerCase().replace(/\s+/g, '-')}`}>
                         Learn More
                       </a>
                     </Button>
