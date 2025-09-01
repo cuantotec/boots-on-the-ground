@@ -4,6 +4,7 @@ language = "nodejs"
 
 # Entry point (not used for static deployments)
 entrypoint = "client/index.html"
+modules = ["nodejs-20"]
 
 # Run configuration for development
 [nix]
@@ -60,3 +61,7 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "npm run dev"
+
+[[ports]]
+localPort = 5000
+externalPort = 80

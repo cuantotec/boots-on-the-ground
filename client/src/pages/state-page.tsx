@@ -61,7 +61,23 @@ export default function StatePage() {
   const stateInfo = stateData[state as keyof typeof stateData];
 
   if (!stateInfo) {
-    return <div>State not found</div>;
+    return (
+      <div className="min-h-screen">
+        <Navbar />
+        <main className="pt-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+            <h1 className="text-4xl font-bold text-foreground mb-4">State Not Found</h1>
+            <p className="text-xl text-muted-foreground mb-8">
+              The requested state could not be found. Please check the URL or return to our homepage.
+            </p>
+            <Button asChild size="lg">
+              <a href="/">Return Home</a>
+            </Button>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
   }
 
   return (

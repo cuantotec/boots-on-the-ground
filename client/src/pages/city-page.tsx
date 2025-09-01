@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { useParams } from "wouter";
 import { cityData } from "@/data/cities";
 
@@ -9,7 +10,23 @@ export default function CityPage() {
   const cityInfo = cityData[state as keyof typeof cityData]?.[city as string];
 
   if (!cityInfo) {
-    return <div>City not found</div>;
+    return (
+      <div className="min-h-screen">
+        <Navbar />
+        <main className="pt-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+            <h1 className="text-4xl font-bold text-foreground mb-4">City Not Found</h1>
+            <p className="text-xl text-muted-foreground mb-8">
+              The requested city could not be found. Please check the URL or return to our homepage.
+            </p>
+            <Button asChild size="lg">
+              <a href="/">Return Home</a>
+            </Button>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
   }
 
   return (
@@ -37,10 +54,13 @@ export default function CityPage() {
               <div>
                 <h2 className="text-3xl font-bold mb-6">About {cityInfo.name}</h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  {cityInfo.description}
+                  {cityInfo.name} is a vibrant city in {cityInfo.state} with a diverse real estate market. 
+                  Our professional team provides comprehensive property documentation services to help real 
+                  estate professionals make informed investment decisions.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  {cityInfo.marketInfo}
+                  Whether you're evaluating distressed properties, need condition reports, or require 
+                  professional photography, we deliver the insights you need to succeed in the {cityInfo.name} market.
                 </p>
               </div>
               <Card>
@@ -70,28 +90,27 @@ export default function CityPage() {
           </div>
         </section>
 
-        {/* Economic Drivers Section */}
+        {/* Market Overview Section */}
         <section className="py-16 bg-secondary/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12">Key Economic Drivers</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Market Overview</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <Card>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4">Major Industries</h3>
-                  <ul className="space-y-2">
-                    {cityInfo.keyEconomicDrivers.map((driver, index) => (
-                      <li key={index} className="text-muted-foreground">
-                        • {driver}
-                      </li>
-                    ))}
-                  </ul>
+                  <h3 className="text-xl font-semibold mb-4">Real Estate Market</h3>
+                  <p className="text-muted-foreground">
+                    {cityInfo.name} offers diverse real estate opportunities with a median home price of {cityInfo.keyStats.medianHomePrice}. 
+                    The market features a mix of residential and commercial properties, making it an attractive 
+                    destination for real estate investors and professionals.
+                  </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-4">Data Sources</h3>
                   <p className="text-sm text-muted-foreground">
-                    {cityInfo.dataSource}
+                    Market data compiled from U.S. Census Bureau, Redfin, Realtor.com, RentCafe, Zumper, 
+                    and FBI Uniform Crime Reporting. Statistics represent current market conditions as of 2025.
                   </p>
                 </CardContent>
               </Card>
@@ -139,7 +158,7 @@ export default function CityPage() {
             <p className="text-xl text-muted-foreground mb-8">
               Get professional real estate documentation services for your {cityInfo.name} properties today.
             </p>
-            <Button size="lg" className="px-8 py-3">
+            <Button asChild size="lg">
               <a href="/#contact">Contact Us Today</a>
             </Button>
           </div>

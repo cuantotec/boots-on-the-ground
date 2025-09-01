@@ -25,9 +25,15 @@ export default function App() {
           <Route path="/terms-of-service" component={TermsOfService} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/cuanto-technologies" component={lazy(() => import("@/pages/cuanto-technologies"))} />
+          
+          {/* State routes - support both patterns */}
           <Route path="/location/:state" component={StatePage} />
           <Route path="/state/:state" component={StatePage} />
+          
+          {/* City routes - support both patterns for backward compatibility */}
+          <Route path="/location/:state/:city" component={CityPage} />
           <Route path="/city/:state/:city" component={CityPage} />
+          
           <Route path="*" component={NotFound} />
         </Switch>
       </Router>
