@@ -89,7 +89,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="md:col-span-2">
             <img
-              src="/logo.svg"
+              src="/white-logo.svg"
               alt="Boots On The Ground Logo"
               className="h-12 w-auto mb-4"
             />
