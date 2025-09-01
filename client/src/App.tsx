@@ -9,6 +9,7 @@ import PrivacyPolicy from "./pages/privacy-policy";
 import TermsOfService from "./pages/terms-of-service";
 import StatePage from "./pages/state-page";
 import CityPage from "./pages/city-page";
+import { Toaster } from "@/components/ui/toaster";
 import { lazy } from "react";
 
 const queryClient = new QueryClient();
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="*" component={NotFound} />
         </Switch>
       </Router>
+      <Toaster />
     </QueryClientProvider>
   );
 }

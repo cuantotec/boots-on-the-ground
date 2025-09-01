@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Camera, FileText, Clock, CheckCircle, MapPin, Phone } from "lucide-react";
+import { ContactFormModal } from "@/components/ui/contact-form-modal";
 
 export default function Services() {
   const services = [
@@ -117,9 +118,14 @@ export default function Services() {
                       ))}
                     </div>
                     
-                    <Button className="w-full" size="lg">
-                      Order Now
-                    </Button>
+                    <ContactFormModal
+                      service={service.title}
+                      trigger={
+                        <Button className="w-full" size="lg">
+                          Order Now
+                        </Button>
+                      }
+                    />
                   </CardContent>
                 </Card>
               ))}
@@ -195,9 +201,13 @@ export default function Services() {
                   Call (609) 350-4359
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
-                Request Quote
-              </Button>
+              <ContactFormModal
+                trigger={
+                  <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
+                    Request Quote
+                  </Button>
+                }
+              />
             </div>
           </div>
         </section>

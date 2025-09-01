@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ContactFormModal } from "@/components/ui/contact-form-modal";
 
 const stateData = {
   "new-jersey": {
@@ -180,9 +181,13 @@ export default function StatePage() {
             <p className="text-xl text-muted-foreground mb-8">
               Contact us today for professional real estate documentation services across {stateInfo.name}.
             </p>
-            <Button size="lg" className="px-8 py-3">
-              <a href="/#contact">Get Your Quote</a>
-            </Button>
+            <ContactFormModal
+              trigger={
+                <Button size="lg" className="px-8 py-3">
+                  Get Your Quote
+                </Button>
+              }
+            />
           </div>
         </section>
       </main>

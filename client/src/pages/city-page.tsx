@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ContactFormModal } from "@/components/ui/contact-form-modal";
 import { useParams } from "wouter";
 import { cityData } from "@/data/cities";
 
@@ -158,9 +159,13 @@ export default function CityPage() {
             <p className="text-xl text-muted-foreground mb-8">
               Get professional real estate documentation services for your {cityInfo.name} properties today.
             </p>
-            <Button asChild size="lg">
-              <a href="/#contact">Contact Us Today</a>
-            </Button>
+            <ContactFormModal
+              trigger={
+                <Button size="lg">
+                  Contact Us Today
+                </Button>
+              }
+            />
           </div>
         </section>
       </main>

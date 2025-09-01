@@ -13,6 +13,7 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { ContactFormModal } from "@/components/ui/contact-form-modal";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -107,13 +108,17 @@ export function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button
-              asChild
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-2 rounded-md text-sm font-semibold"
-              data-testid="button-order-now"
-            >
-              <a href="/services">Order Now</a>
-            </Button>
+            <ContactFormModal
+              trigger={
+                <Button
+                  asChild
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-2 rounded-md text-sm font-semibold"
+                  data-testid="button-order-now"
+                >
+                  <span>Order Now</span>
+                </Button>
+              }
+            />
           </div>
 
           {/* Mobile menu button */}
@@ -194,14 +199,18 @@ export function Navbar() {
               ))}
             </div>
             
-            <Button
-              asChild
-              className="bg-accent hover:bg-accent/90 text-accent-foreground w-full mt-4"
-              data-testid="button-mobile-order-now"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <a href="/services">Order Now</a>
-            </Button>
+            <ContactFormModal
+              trigger={
+                <Button
+                  asChild
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground w-full mt-4"
+                  data-testid="button-mobile-order-now"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <span>Order Now</span>
+                </Button>
+              }
+            />
           </div>
         </div>
       )}

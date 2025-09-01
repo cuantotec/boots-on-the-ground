@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { useScrollTo } from "@/hooks/use-scroll-to";
+import { ContactFormModal } from "@/components/ui/contact-form-modal";
 
 interface ServiceCardProps {
   title: string;
@@ -11,8 +11,6 @@ interface ServiceCardProps {
 }
 
 export function ServiceCard({ title, description, price, image, imageAlt }: ServiceCardProps) {
-  const { scrollToSection } = useScrollTo();
-
   return (
     <Card className="card-hover" data-testid={`card-service-${title.toLowerCase().replace(/\s+/g, '-')}`}>
       <CardContent className="p-6">
@@ -33,13 +31,17 @@ export function ServiceCard({ title, description, price, image, imageAlt }: Serv
           </span>
           <span className="text-sm text-muted-foreground">Starting price</span>
         </div>
-        <Button
-          onClick={() => scrollToSection("contact")}
-          className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-          data-testid={`button-order-${title.toLowerCase().replace(/\s+/g, '-')}`}
-        >
-          Order Now
-        </Button>
+        <ContactFormModal 
+          service={title}
+          trigger={
+            <Button
+              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+              data-testid={`button-order-${title.toLowerCase().replace(/\s+/g, '-')}`}
+            >
+              Order Now
+            </Button>
+          }
+        />
       </CardContent>
     </Card>
   );
